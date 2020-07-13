@@ -1,0 +1,17 @@
+package com.mindtree.service.impl;
+
+import org.springframework.stereotype.Service;
+
+import com.mindtree.entity.DescriptionEntity;
+import com.mindtree.service.IDescriptionService;
+
+@Service
+public class DescriptionServiceImpl implements IDescriptionService {
+
+	@Override
+	public DescriptionEntity getDescType(String descType, int zoneId) {
+		
+		return null;
+	}
+
+}

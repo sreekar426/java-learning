@@ -1,0 +1,25 @@
+
+¹squid:S1192—"†Define a constant instead of duplicating this literal "REGISTRATION - UPLOAD_PACKET - REGISTRATION_OFFICER_PACKET_CONTROLLER" 3 times.(ƒÀ …H’RCRITICALZ
+CODE_SMELL
+¹squid:S1192¼"†Define a constant instead of duplicating this literal "REGISTRATION - CREATE_PACKET - REGISTRATION_OFFICER_PACKET_CONTROLLER" 4 times.(ÅÜÉH‚’RCRITICALZ
+CODE_SMELL
+œsquid:S1192á"jDefine a constant instead of duplicating this literal "REGISTRATION - UI- Officer Packet Create " 3 times.(×Î¥¹Hƒ’RCRITICALZ
+CODE_SMELL
+¼squid:S1192ñ"„Define a constant instead of duplicating this literal "REGISTRATION - SAVE_PACKET - REGISTRATION_OFFICER_PACKET_CONTROLLER" 4 times.(êó­üÿÿÿÿH„’RCRITICALZ
+CODE_SMELL
+\squid:S1125Ë	"(Remove the literal "true" boolean value.(©Ì£üÿÿÿÿH…’RMINORZ
+CODE_SMELL
+‰squid:S3776Ú"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(è±…ÂüÿÿÿÿH†’RCRITICALZ
+CODE_SMELL
+‰squid:S3776¯"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(¼ñå«ÿÿÿÿÿH‡’RCRITICALZ
+CODE_SMELL
+‰squid:S3776ò"RRefactor this method to reduce its Cognitive Complexity from 39 to the 15 allowed.(ÉÛ‘çÿÿÿÿÿHˆ’RCRITICALZ
+CODE_SMELL
+„squid:S3776ç"RRefactor this method to reduce its Cognitive Complexity from 35 to the 15 allowed.(ÏĞ¬âH‰’RCRITICALZ
+CODE_SMELL
+‰squid:S3776ë"RRefactor this method to reduce its Cognitive Complexity from 62 to the 15 allowed.(ÁÜªşÿÿÿÿHŠ’RCRITICALZ
+CODE_SMELL
+‰squid:S3776Î"RRefactor this method to reduce its Cognitive Complexity from 53 to the 15 allowed.(ÈàæáüÿÿÿÿH‹’RCRITICALZ
+CODE_SMELL
+dsquid:S3655™"7Call "Optional#isPresent()" before accessing the value.(Ï¬ûÿÿÿÿHŒ’RMAJORZBUG
+Usquid:S1148§"#Use a logger to log this exception.(ğôü’H’RMINORZVULNERABILITY

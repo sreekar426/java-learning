@@ -1,0 +1,8 @@
+
+k
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ô˜ÒòıÿÿÿÿHéƒRMAJORZ
+CODE_SMELL
+msquid:S1118":Add a private constructor to hide the implicit public one.(‡ŒïøşÿÿÿÿHêƒRMAJORZ
+CODE_SMELL
+Xsquid:S1181"%Catch Exception instead of Throwable.(À˜§üÿÿÿÿHëƒRMAJORZ
+CODE_SMELL

@@ -1,0 +1,32 @@
+package com.mindtree.service;
+
+import java.util.List;
+
+import com.mindtree.entity.ZoneTypeEntity;
+
+public interface IZoneService {
+
+	/**
+	 * Gets the all zone type.
+	 *
+	 * @return the all zone type
+	 */
+	List<ZoneTypeEntity> getAllZoneType();
+
+	/**
+	 * Gets the zone type.
+	 *
+	 * @param zoneId the zone id
+	 * @return the zone type
+	 */
+	ZoneTypeEntity getZoneType(String zoneId);
+	
+	
+	/**
+	 * Save zone details.
+	 *
+	 * @param zone the zone
+	 */
+	void saveZoneDetails(ZoneTypeEntity zone);
+
+}

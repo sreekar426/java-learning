@@ -1,0 +1,39 @@
+package com.mindtree.dao.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.mindtree.dao.IPropertyDao;
+import com.mindtree.entity.DescriptionEntity;
+import com.mindtree.entity.PropertyEntity;
+import com.mindtree.exception.TaxException;
+import com.mindtree.repository.PropertyRepository;
+
+/**
+ * The Class PropertyDaoImpl.
+ */
+@Repository
+public class PropertyDaoImpl implements IPropertyDao {
+
+	/** The property repository. */
+	@Autowired
+	private PropertyRepository propertyRepository;
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see com.mindtree.dao.IPropertyDao#getPropertyDetails(int, java.lang.String)
+	 */
+	@Override
+	public PropertyEntity getProperty(int descId, String status) throws TaxException {
+
+		PropertyEntity propertyEntity = null;
+		try {
+			propertyEntity = propertyRepository.findByDescriptionDescIdAndStatus(descId, status);
+		} catch (RuntimeException exTaxException) {
+			throw new TaxException(exTaxException);
+		}
+		return propertyEntity;
+	}
+
+}

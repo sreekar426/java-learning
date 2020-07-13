@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<form action="">
+	    <div style="padding-bottom: -5px"><p>my concent  Text</p></div>
+		<div style="padding-bottom: 7px" >
+			<input type="radio" name="gender" value="Yes"> Yes 
+			<input type="radio" name="gender" value="No"> No
+		</div>
+	</form>
+
+
+</body>
+</html>

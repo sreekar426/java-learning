@@ -1,0 +1,19 @@
+
+msquid:UselessImportCheck"+Remove this unused import 'java.util.Date'.(¸…¼ü8ˆÕØóË-H­°RMINORZ
+CODE_SMELL
+šsquid:S1488F"`Immediately return this expression instead of assigning it to the temporary variable "projects".(ÃÝœæûÿÿÿÿ8ˆÕØóË-H²°RMINORZ
+CODE_SMELL
+™squid:S14886"_Immediately return this expression instead of assigning it to the temporary variable "empList".(íÝ™Ïÿÿÿÿÿ8ˆÕØóË-H°°RMINORZ
+CODE_SMELL
+tsquid:UselessImportCheck"-Remove this unused import 'java.util.Random'.(èøÉ›ùÿÿÿÿ8ˆÕØóË-H®°RMINORZ
+CODE_SMELL
+’squid:S4144L"]Update this method so that its implementation is not identical to "getAllProject" on line 68.(¥öÎá8ˆÕØóË-H³°RMAJORZ
+CODE_SMELL
+™squid:UselessImportCheck"RRemove this unused import 'org.springframework.web.bind.annotation.RequestMethod'.(Ê™Ðÿûÿÿÿÿ8ˆÕØóË-H¯°RMINORZ
+CODE_SMELL
+šsquid:S1488N"`Immediately return this expression instead of assigning it to the temporary variable "projects".(ÃÝœæûÿÿÿÿ8ˆÕØóË-H´°RMINORZ
+CODE_SMELL
+•squid:S1488>"`Immediately return this expression instead of assigning it to the temporary variable "projects".(¡ÝºØ8ˆÕØóË-H±°RMINORZ
+CODE_SMELL
+Žsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¹ª‹¾ÿÿÿÿÿH¬°RMINORZ
+CODE_SMELL

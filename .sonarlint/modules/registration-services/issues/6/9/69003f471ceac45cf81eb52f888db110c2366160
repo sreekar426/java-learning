@@ -1,0 +1,8 @@
+
+—squid:UselessImportCheckG"WRemove this unused import 'io.mosip.registration.dto.json.metadata.BiometricException'.(ç§®¶úÿÿÿÿHø‘RMINORZ
+CODE_SMELL
+rsquid:S2674§"JCheck the return value of the "read" call to see how many bytes were read.(©‡¦õHö‘RMINORZBUG
+squid:UselessImportCheckW"RRemove this unused import 'io.mosip.registration.service.bio.impl.BioServiceImpl'.(ÃÆò±Hù‘RMINORZ
+CODE_SMELL
+Šsquid:UselessImportCheck;"ORemove this unused import 'io.mosip.registration.dao.impl.RegisteredDeviceDAO'.(»ÔŞúH÷‘RMINORZ
+CODE_SMELL

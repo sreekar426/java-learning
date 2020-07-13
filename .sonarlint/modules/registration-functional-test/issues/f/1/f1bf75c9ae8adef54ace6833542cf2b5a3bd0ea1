@@ -1,0 +1,101 @@
+
+…squid:S1192—"SDefine a constant instead of duplicating this literal "BASE OCNFIGURATION" 4 times.(ÔˆË‘Hê¡RCRITICALZ
+CODE_SMELL
+Œsquid:S1192o"VDefine a constant instead of duplicating this literal "BASE CONFIGURATION - " 6 times.(ˆØ·ºÿÿÿÿÿHë¡RCRITICALZ
+CODE_SMELL
+ˆsquid:S1192o"RDefine a constant instead of duplicating this literal "AUTOMATION - REG" 12 times.(ˆØ·ºÿÿÿÿÿHì¡RCRITICALZ
+CODE_SMELL
+…squid:S1192Î"SDefine a constant instead of duplicating this literal "BASE CONFIGURATION" 6 times.(¸ÎÅíHí¡RCRITICALZ
+CODE_SMELL
+}squid:S1192"KDefine a constant instead of duplicating this literal "AUTOMATION" 5 times.(¯ñéHî¡RCRITICALZ
+CODE_SMELL
+ƒsquid:S1192l"MDefine a constant instead of duplicating this literal "SYNC_SUCCESS" 3 times.(¼—ÇäøÿÿÿÿHï¡RCRITICALZ
+CODE_SMELL
+ysquid:S1192ì"GDefine a constant instead of duplicating this literal "userID" 4 times.(Û¡´Hñ¡RCRITICALZ
+CODE_SMELL
+‡squid:S2293R"YReplace the type specification in this constructor call with the diamond operator ("<>").(ŒÍ˜Hò¡RMINORZ
+CODE_SMELL
+Šsquid:S1450P"WRemove the "centerID" field and declare it as a local variable in the relevant methods.(ĞéşúÿÿÿÿHó¡RMINORZ
+CODE_SMELL
+†squid:S1450Q"XRemove the "stationID" field and declare it as a local variable in the relevant methods.(Ü™´ Hô¡RMINORZ
+CODE_SMELL
+k
+squid:S106k"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿHõ¡RMAJORZ
+CODE_SMELL
+e
+squid:S106s"9Replace this use of System.out or System.err by a logger.(ï®BHö¡RMAJORZ
+CODE_SMELL
+f
+squid:S106u"9Replace this use of System.out or System.err by a logger.(Ê‚—H÷¡RMAJORZ
+CODE_SMELL
+f
+squid:S106y"9Replace this use of System.out or System.err by a logger.(Å¼¦ÆHø¡RMAJORZ
+CODE_SMELL
+k
+squid:S106z"9Replace this use of System.out or System.err by a logger.(Ê¢‚ŸùÿÿÿÿHù¡RMAJORZ
+CODE_SMELL
+g
+squid:S106†"9Replace this use of System.out or System.err by a logger.(óÌíŠHú¡RMAJORZ
+CODE_SMELL
+l
+squid:S106ˆ"9Replace this use of System.out or System.err by a logger.(¥ş¿úÿÿÿÿHû¡RMAJORZ
+CODE_SMELL
+g
+squid:S106Œ"9Replace this use of System.out or System.err by a logger.(Å¼¦ÆHü¡RMAJORZ
+CODE_SMELL
+l
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ê¢‚ŸùÿÿÿÿHı¡RMAJORZ
+CODE_SMELL
+g
+squid:S106˜"9Replace this use of System.out or System.err by a logger.(˜ÿÕ”Hş¡RMAJORZ
+CODE_SMELL
+f
+squid:S106š"9Replace this use of System.out or System.err by a logger.(ùÏ 
+Hÿ¡RMAJORZ
+CODE_SMELL
+g
+squid:S106"9Replace this use of System.out or System.err by a logger.(Å¼¦ÆH€¢RMAJORZ
+CODE_SMELL
+l
+squid:S106Ÿ"9Replace this use of System.out or System.err by a logger.(Ê¢‚ŸùÿÿÿÿH¢RMAJORZ
+CODE_SMELL
+l
+squid:S106«"9Replace this use of System.out or System.err by a logger.(Ñ¡„øşÿÿÿÿH‚¢RMAJORZ
+CODE_SMELL
+f
+squid:S106­"9Replace this use of System.out or System.err by a logger.(†”œHƒ¢RMAJORZ
+CODE_SMELL
+g
+squid:S106±"9Replace this use of System.out or System.err by a logger.(Å¼¦ÆH„¢RMAJORZ
+CODE_SMELL
+l
+squid:S106²"9Replace this use of System.out or System.err by a logger.(Ê¢‚ŸùÿÿÿÿH…¢RMAJORZ
+CODE_SMELL
+l
+squid:S106½"9Replace this use of System.out or System.err by a logger.(‹É¸œúÿÿÿÿH†¢RMAJORZ
+CODE_SMELL
+l
+squid:S106¿"9Replace this use of System.out or System.err by a logger.(ïµ’ùÿÿÿÿH‡¢RMAJORZ
+CODE_SMELL
+g
+squid:S106Ã"9Replace this use of System.out or System.err by a logger.(Å¼¦ÆHˆ¢RMAJORZ
+CODE_SMELL
+l
+squid:S106Ä"9Replace this use of System.out or System.err by a logger.(Ê¢‚ŸùÿÿÿÿH‰¢RMAJORZ
+CODE_SMELL
+hsquid:S2696û"6Make the enclosing method "static" or remove this set.(¤î ‘HŠ¢RCRITICALZ
+CODE_SMELL
+hsquid:S2696ı"6Make the enclosing method "static" or remove this set.(äşÅÔH‹¢RCRITICALZ
+CODE_SMELL
+dsquid:S1481"0Remove this unused "classLoader" local variable.(¹ÌíÍÿÿÿÿÿHŒ¢RMINORZ
+CODE_SMELL
+ƒsquid:S3776^"RRefactor this method to reduce its Cognitive Complexity from 85 to the 15 allowed.(Ğ‚ğ’H¢RCRITICALZ
+CODE_SMELL
+ssquid:S1854"?Remove this useless assignment to local variable "classLoader".(¹ÌíÍÿÿÿÿÿH¢RMAJORZ
+CODE_SMELL
+…squid:S00117g"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àÚ·îúÿÿÿÿH¢RMINORZ
+CODE_SMELL
+squid:S00117÷"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÙÇõ«H¢RMINORZ
+CODE_SMELL
+}squid:UselessImportCheck"BRemove this unused import 'io.mosip.registration.entity.KeyStore'.(•³¾«H‘¢RMINORZ
+CODE_SMELL

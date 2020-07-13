@@ -1,0 +1,144 @@
+package com.mindtree.java.controller;
+
+import java.time.Year;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.mindtree.dto.AjaxDto;
+import com.mindtree.entity.DescriptionEntity;
+import com.mindtree.entity.PropertyEntity;
+import com.mindtree.entity.ZoneTypeEntity;
+import com.mindtree.service.IDescriptionService;
+import com.mindtree.service.IPropertyService;
+import com.mindtree.service.IZoneService;
+import com.mindtree.utill.TaxCalculationUtill;
+
+@Controller
+public class TaxMangmentController {
+
+	@Autowired
+	private IZoneService zoneService;
+
+	@Autowired
+	private IDescriptionService descriptionService;
+
+	@Autowired
+	private IPropertyService propertyService;
+
+	/**
+	 * Adds the tax.
+	 *
+	 * @param map the map
+	 * @return the string
+	 */
+	@GetMapping("/addTax")
+	public String addTax(ModelMap map) {
+		return "addTax";
+	}
+
+	/**
+	 * View tax.
+	 *
+	 * @param map the map
+	 * @return the string
+	 */
+	@GetMapping("/viewTax")
+	public String viewTax(ModelMap map) {
+		return "viewTax";
+	}
+
+	@GetMapping("/view")
+	@ResponseBody
+	public List<ZoneTypeEntity> viewRecords() {
+
+		return zoneService.getAllZoneType();
+
+	}
+
+	@GetMapping("/all")
+	@ResponseBody
+	public List<String> getAllZone() {
+		List<String> zonesList = new ArrayList<>();
+
+		List<ZoneTypeEntity> listOfZone = zoneService.getAllZoneType();
+
+		listOfZone.forEach(o -> {
+			zonesList.add(o.getZoneType());
+		});
+
+		return zonesList;
+
+	}
+
+	@GetMapping("/all/{zoneId}")
+	@ResponseBody
+	public List<String> getDescriptionById(@PathVariable String zoneId) {
+
+		List<String> descriptionDetails = new ArrayList<>();
+
+		ZoneTypeEntity zoneDetails;
+
+		zoneDetails = zoneService.getZoneType(zoneId);
+
+		zoneDetails.getDescription().forEach(o -> {
+
+			descriptionDetails.add(o.getDescType());
+		});
+
+		return descriptionDetails;
+
+	}
+
+	@PostMapping("/taxValue")
+	@ResponseBody
+	public double taxCalculation(@RequestBody AjaxDto ajaxDto) {
+		
+		PropertyEntity property;
+
+		try {
+
+			ZoneTypeEntity zoneType = zoneService.getZoneType(ajaxDto.getZoneId());
+			DescriptionEntity descType = descriptionService.getDescType(ajaxDto.getPropertyId(), zoneType.getZoneId());
+
+			PropertyEntity property = propertyService.getPropertyDetails(descType.getDescId(), ajaxDto.getStatus());
+
+		} catch (Exception exception) {
+			exception.printStackTrace();
+		}
+		return TaxCalculationUtill.taxCalculation(ajaxDto.getAreaId(), property.getUav(), ajaxDto.getYearId());
+
+	}
+
+	@PostMapping("/pay")
+	@ResponseBody
+	public String pay(@RequestBody AjaxDto ajaxDto) {
+
+		ZoneTypeEntity zoneId = zoneService.getZoneType(ajaxDto.getZoneId());
+
+		try {
+			if ("Owner".equalsIgnoreCase(ajaxDto.getStatus())) {
+
+				zoneId.setOwnerAmount(zoneId.getOwnerAmount() + Math.round(ajaxDto.getTotalId() * 100.0) / 100.0);
+				zoneService.saveZoneDetails(zoneId);
+
+			} else {
+				zoneId.setTenantAmount(zoneId.getTenantAmount() + Math.round(ajaxDto.getTotalId() * 100.0) / 100.0);
+				zoneService.saveZoneDetails(zoneId);
+			}
+		} catch (Exception exception) {
+			exception.printStackTrace();
+		}
+
+		return "Tax details are saved successfully";
+
+	}
+}

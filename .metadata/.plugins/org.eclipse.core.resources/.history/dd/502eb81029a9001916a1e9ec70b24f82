@@ -1,0 +1,626 @@
+<html>
+<head>
+<style>
+body {
+	font-family: "Roboto";
+}
+
+table, .head {
+	font-size: 13px;
+}
+
+.previewPhoto {
+	float: right;
+	position: absolute;
+	top: 220px;
+}
+
+.photo {
+	float: right;
+	position: absolute;
+	top: 280px;
+}
+
+.applicantPhoto {
+	position: absolute;
+	top: -35px;
+	left: 540px;
+}
+
+.applicantPhotoLabel {
+	color: #808080;
+	font-size: 10px;
+	position: absolute;
+	white-space: nowrap;
+	top: -70px;
+	left: 560px;
+}
+
+.parentPhotoLabel {
+	color: #808080;
+	font-size: 10px;
+	position: absolute;
+	white-space: nowrap;
+	top: -70px;
+	left: 665px;
+}
+
+.applicantPhotoLabel2 {
+	color: #808080;
+	font-size: 10px;
+	position: absolute;
+	white-space: nowrap;
+	top: -70px;
+	left: 690px;
+}
+
+.parentPhoto {
+	position: absolute;
+	top: -35px;
+	left: 670px;
+}
+
+.form {
+	display: inline-block;
+}
+
+.section {
+	align: center;
+	padding: 30px;
+	width: 800px;
+	margin: auto;
+}
+
+.headings {
+	color: #808080;
+	font-size: 10px;
+}
+
+td, p {
+	display: inline;
+}
+
+.dataTable {
+	word-wrap: break-word;
+	table-layout: fixed;
+	width: 70%;
+}
+
+.headerTable {
+	width: 90%;
+}
+
+.uinHeaderTable {
+	width: 100%;
+}
+
+h5 {
+	display: inline;
+	position: absolute;
+}
+
+.iris {
+	top: -15px;
+	left: 152px;
+}
+
+.irisWithoutException {
+	top: -15px;
+	left: 114px;
+}
+
+.tableWithoutException {
+	width: 50%;
+	text-align: center;
+	table-layout: fixed;
+	margin: 0 auto;
+}
+
+.biometricsTable {
+	width: 100%;
+	text-align: center;
+	table-layout: fixed;
+}
+
+.biometrics {
+	position: relative;
+}
+
+.leftLittle {
+	top: 15px;
+	left: 90px;
+}
+
+.leftRing {
+	top: 3px;
+	left: 103px;
+}
+
+.leftMiddle {
+	top: -7px;
+	left: 119px;
+}
+
+.leftIndex {
+	top: 3px;
+	left: 132px;
+}
+
+.rightIndex {
+	top: 3px;
+	left: 105px;
+}
+
+.rightMiddle {
+	top: -7px;
+	left: 119px;
+}
+
+.rightRing {
+	top: 3px;
+	left: 132px;
+}
+
+.rightLittle {
+	top: 15px;
+	left: 146px;
+}
+
+.leftThumb {
+	top: -4px;
+	left: 105px;
+}
+
+.rightThumb {
+	top: -4px;
+	left: 130px;
+}
+
+.parentStyle {
+	top: -15px;
+	left: 152px;
+}
+
+.parentIris1 {
+	top: -15px;
+	left: 212px;
+}
+
+.parentIris2 {
+	top: -15px;
+	left: 214px;
+}
+
+li span {
+	color: black;
+	font-size: 12px;
+}
+
+li {
+	color: lightgrey
+}
+
+button {
+	float: right;
+	font-size: 12px;
+	border: none;
+	background-color: transparent;
+	outline: none;
+}
+
+button:active {
+	background-color: black;
+	color: white;
+}
+
+.modify {
+	float: right;
+}
+
+.bottom {
+	vertical-align: bottom;
+}
+
+.consent-block {
+	font-size: 13px;
+}
+
+2
+input[type="radio"] {
+	display: none;
+}
+
+input[type="radio"]+label:before {
+	content: "";
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	padding: 3px;
+	margin-right: 5px;
+	background-clip: content-box;
+	border: 1px solid grey;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+input[type="radio"]:checked+label:before {
+	background-color: #FF4081;
+	border-color: #FF4081;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+.consent-block label {
+	display: inline-flex;
+	align-items: center;
+}
+</style>
+<script>
+	document.onreadystatechange = function() {
+		if (document.readyState === 'complete') {
+			var images = document.getElementsByTagName('img');
+			for (var imageIndex = 0; imageIndex < images.length; imageIndex++) {
+				images[imageIndex].addEventListener("mousedown",
+						function(event) {
+							event.preventDefault();
+						});
+			}
+		}
+	}
+</script>
+</head>
+
+<body>
+	<div class="section">
+		<div class="form">
+			<table ${AckReceipt} class="${headerTable}">
+				<tr>
+					<td class="bottom"><img src="${QRCodeSource}" width="85"
+						height="85" /></td>
+					<td class="bottom"><p class="headings">${RIDPrimLabel} /
+							${RIDSecLabel}</p>
+						<br />${RID}</td>
+					<td ${UINUpdate} class="bottom"><p class="headings">${UINPrimLabel}
+							/ ${UINSecLabel}</p>
+						<br />${UIN}</td>
+					<td class="bottom"><p class="headings">${DatePrimLabel} /
+							${DateSecLabel}</p>
+						<br />${Date}</td>
+				</tr>
+			</table>
+			<table ${Preview} class="headerTable">
+				<tr>
+					<td${IsUINUpdate}><p class="headings">${PreRegIDPrimLabel}
+							/ ${PreRegIDSecLabel}</p>
+						<br />${PreRegID}</td>
+					<td><p class="headings">${DatePrimLabel} / ${DateSecLabel}</p>
+						<br />${Date}</td>
+				</tr>
+			</table>
+			<br />
+			<hr />
+			<p class="head">
+				<b>${DemographicInfo}</b>
+			</p>
+			<div ${Preview} class="modify">
+				<img src="${ModifyImageSource}" border="0" width="15" height="15" />
+				<button id="modifyDemographicInfo">${Modify}</button>
+			</div>
+			<hr />
+			<table class="dataTable">
+				<tr>
+					<td><p class="headings">${FullNamePrimLabel} /
+							${FullNameSecLabel}</p>
+						<br />${FullName}<br />${FullNameSec}</td>
+					<td><p class="headings">${GenderPrimLabel} /
+							${GenderSecLabel}</p>
+						<br />${Gender}<br />${GenderSec}</td>
+				</tr>
+				<tr>
+					<td><p class="headings">${DOBPrimLabel} / ${DOBSecLabel}</p>
+						<br />${DOB}</td>
+					<td><p class="headings">${AgePrimLabel} / ${AgeSecLabel}</p>
+						<br />${Age} ${YearsPrim} ${YearsSec}</td>
+				</tr>
+				<tr>
+					<td><p class="headings">${ForiegnerPrimLabel} /
+							${ForiegnerSecLabel}</p>
+						<br />${ResidenceStatus}<br />${ResidenceStatusSec}</td>
+					<td><p class="headings">${AddressLine1PrimLabel} /
+							${AddressLine1SecLabel}</p>
+						<br />${AddressLine1}<br />${AddressLine1Sec}</td>
+				</tr>
+				<tr>
+					<td><p class="headings">${AddressLine2PrimLabel} /
+							${AddressLine2SecLabel}</p>
+						<br />${AddressLine2}<br />${AddressLine2Sec}</td>
+					<td><p class="headings">${RegionPrimLabel} /
+							${RegionSecLabel}</p>
+						<br />${Region}<br />${RegionSec}</td>
+				</tr>
+				<tr>
+					<td><p class="headings">${ProvincePrimLabel} /
+							${ProvinceSecLabel}</p>
+						<br />${Province}<br />${ProvinceSec}</td>
+					<td><p class="headings">${LocalAuthorityPrimLabel} /
+							${LocalAuthoritySecLabel}</p>
+						<br />${LocalAuthority}<br />${LocalAuthoritySec}</td>
+				</tr>
+				<tr>
+					<td><p class="headings">${MobilePrimLabel} /
+							${MobileSecLabel}</p>
+						<br />${Mobile}</td>
+					<td><p class="headings">${PostalCodePrimLabel} /
+							${PostalCodeSecLabel}</p>
+						<br />${PostalCode}</td>
+				</tr>
+				<tr>
+					<td><p class="headings">${EmailPrimLabel} /
+							${EmailSecLabel}</p>
+						<br />${Email}</td>
+					<td><p class="headings">${CNIEPrimLabel} / ${CNIESecLabel}</p>
+						<br />${CNIE}</td>
+				</tr>
+				<tr${WithParent}>
+					<td><p class="headings">${ParentNamePrimLabel} /
+							${ParentNameSecLabel}</p>
+						<br />${ParentName}<br />${ParentNameSec}</td>
+					<td><p class="headings">${ParentUINPrimLabel} /
+							${ParentUINSecLabel}</p>
+						<br />${ParentUIN}</td>
+				</tr>
+			</table>
+			<br />
+			<p ${DocumentsEnabled} class="head">
+				<b>${DocumentsPrimLabel}</b>
+			</p>
+			<div ${DocumentsEnabled} ${Preview} class="modify">
+				<img src="${ModifyImageSource}" border="0" width="15" height="15" />
+				<button id="modifyDocuments">${Modify}</button>
+			</div>
+			<hr ${DocumentsEnabled}/>
+			<table${DocumentsEnabled}>
+				<tr>
+					<td><p class="headings">${DocumentsPrimLabel} /
+							${DocumentsSecLabel}</p>
+						<br />${Documents}<br />${DocumentsSec}</td>
+				</tr>
+			</table>
+			<br />
+			<p ${BiometricsEnabled} class="head">
+				<b>${BiometricsPrimLabel}</b>
+			</p>
+			<div ${BiometricsEnabled} ${Preview} class="modify">
+				<img src="${ModifyImageSource}" border="0" width="15" height="15" />
+				<button id="modifyBiometrics">${Modify}</button>
+			</div>
+			<hr ${BiometricsEnabled}/>
+			<table${BiometricsEnabled}>
+				<tr>
+					<td><p class="headings">${BiometricsPrimLabel} /
+							${BiometricsSecLabel}</p>
+						<br />${Biometrics}<br />${BiometricsSec}</td>
+				</tr>
+			</table>
+			<table${IrisDisabled}>
+				<tr>
+					<td><p class="headings">${ExceptionPhotoPrimLabel} /
+							${ExceptionPhotoSecLabel}</p></td>
+				</tr>
+				<tr>
+					<td><img src="${ExceptionImageSource}" border="0" width="80"
+						height="80" /></td>
+				</tr>
+			</table>
+
+			<table ${IrisEnabled} ${WithException} class="biometricsTable">
+				<tr${AckReceipt}>
+					<td><p class="headings">${ExceptionPhotoPrimLabel} /
+							${ExceptionPhotoSecLabel}</p></td>
+					<td${parentLeftEye}><p class="headings">${LeftEyePrimLabel}
+							/ ${LeftEyeSecLabel}</p></td>
+					<td${parentRightEye}><p class="headings">${RightEyePrimLabel}
+							/ ${RightEyeSecLabel}</p></td>
+				</tr>
+				<tr${Preview}>
+					<td><p class="headings">${ExceptionPhotoPrimLabel} /
+							${ExceptionPhotoSecLabel}</p></td>
+					<td${leftEyeCaptured}><p class="headings">${LeftEyePrimLabel}
+							/ ${LeftEyeSecLabel}</p></td>
+					<td${rightEyeCaptured}><p class="headings">${RightEyePrimLabel}
+							/ ${RightEyeSecLabel}</p></td>
+				</tr>
+				<tr${AckReceipt}>
+					<td><img src="${ExceptionImageSource}" border="0" width="80"
+						height="80" /></td>
+					<td${parentLeftEye}><div class="biometrics">
+							<h5 class="${irisWithException}">${LeftEye}</h5>
+							<img src="${EyeImageSource}" border="0" width="85" height="80" />
+						</div></td>
+					<td${parentRightEye}><div class="biometrics">
+							<h5 class="${irisWithException}">${RightEye}</h5>
+							<img src="${EyeImageSource}" border="0" width="85" height="80" />
+						</div></td>
+				</tr>
+				<tr${Preview}>
+					<td><img src="${ExceptionImageSource}" border="0" width="80"
+						height="80" /></td>
+					<td${leftEyeCaptured}><img src="${CapturedLeftEye}"
+						border="0" width="85" height="80" /></td>
+					<td${rightEyeCaptured}><img src="${CapturedRightEye}"
+						border="0" width="85" height="80" /></td>
+				</tr>
+			</table>
+			<table ${IrisEnabled} class="tableWithoutException"${WithoutException}>
+				<tr${AckReceipt}>
+					<td${parentLeftEye}><p class="headings">${LeftEyePrimLabel}
+							/ ${LeftEyeSecLabel}</p></td>
+					<td${parentRightEye}><p class="headings">${RightEyePrimLabel}
+							/ ${RightEyeSecLabel}</p></td>
+				</tr>
+				<tr${Preview}>
+					<td${leftEyeCaptured}><p class="headings">${LeftEyePrimLabel}
+							/ ${LeftEyeSecLabel}</p></td>
+					<td${rightEyeCaptured}><p class="headings">${RightEyePrimLabel}
+							/ ${RightEyeSecLabel}</p></td>
+				</tr>
+				<tr${AckReceipt}>
+					<td${parentLeftEye}><div class="biometrics">
+							<h5 class="${irisStyle}">${LeftEye}</h5>
+							<img src="${EyeImageSource}" border="0" width="85" height="80" />
+						</div></td>
+					<td${parentRightEye}><div class="biometrics">
+							<h5 class="${irisStyle}">${RightEye}</h5>
+							<img src="${EyeImageSource}" border="0" width="85" height="80" />
+						</div></td>
+				</tr>
+				<tr${Preview}>
+					<td${leftEyeCaptured}><img src="${CapturedLeftEye}"
+						border="0" width="85" height="80" /></td>
+					<td${rightEyeCaptured}><img src="${CapturedRightEye}"
+						border="0" width="85" height="80" /></td>
+				</tr>
+			</table>
+			<table ${FingerprintsCaptured} class="biometricsTable">
+				<tr${AckReceipt}>
+					<td${parentLeftSlap}><p class="headings">${LeftPalmPrimLabel}
+							/ ${LeftPalmSecLabel}</p></td>
+					<td${parentRightSlap}><p class="headings">${RightPalmPrimLabel}
+							/ ${RightPalmSecLabel}</p></td>
+					<td${parentThumbs}><p class="headings">${ThumbsPrimLabel}
+							/ ${ThumbsSecLabel}</p></td>
+				</tr>
+				<tr${Preview}>
+					<td${leftSlapCaptured}><p class="headings">${LeftPalmPrimLabel}
+							/ ${LeftPalmSecLabel}</p></td>
+					<td${rightSlapCaptured}><p class="headings">${RightPalmPrimLabel}
+							/ ${RightPalmSecLabel}</p></td>
+					<td${thumbsCaptured}><p class="headings">${ThumbsPrimLabel}
+							/ ${ThumbsSecLabel}</p></td>
+				</tr>
+				<tr${AckReceipt}>
+					<td${parentLeftSlap}><div class="biometrics">
+							<h5 ${isChild} class="leftLittle">${leftLittle}</h5>
+							<h5 ${isChild} class="leftRing">${leftRing}</h5>
+							<h5 ${isChild} class="leftMiddle">${leftMiddle}</h5>
+							<h5 class="${childLeft}">${leftIndex}</h5>
+							<img src="${LeftPalmImageSource}" border="0" width="85"
+								height="80" />
+						</div></td>
+					<td${parentRightSlap}><div class="biometrics">
+							<h5 ${isChild} class="rightIndex">${rightIndex}</h5>
+							<h5 ${isChild} class="rightMiddle">${rightMiddle}</h5>
+							<h5 ${isChild} class="rightRing">${rightRing}</h5>
+							<h5 class="${childRight}">${rightLittle}</h5>
+							<img src="${RightPalmImageSource}" border="0" width="85"
+								height="80" />
+						</div></td>
+					<td${parentThumbs}><div class="biometrics">
+							<h5 ${isChild} class="leftThumb">${leftThumb}</h5>
+							<h5 class="${childThumbs}">${rightThumb}</h5>
+							<img src="${ThumbsImageSource}" border="0" width="85" height="80" />
+						</div></td>
+				</tr>
+
+				<tr${Preview}>
+					<td${leftSlapCaptured}><img src="${CapturedLeftSlap}"
+						border="0" width="85" height="80" /></td>
+					<td${rightSlapCaptured}><img src="${CapturedRightSlap}"
+						border="0" width="85" height="80" /></td>
+					<td${thumbsCaptured}><img src="${CapturedThumbs}" border="0"
+						width="85" height="80" /></td>
+				</tr>
+				<tr${AckReceipt}>
+					<td><p ${MissingLeftFingers} class="headings">${LeftSlapExceptionPrim}
+							/ ${LeftSlapExceptionSec}</p></td>
+					<td><p ${MissingRightFingers} class="headings">${RightSlapExceptionPrim}
+							/ ${RightSlapExceptionSec}</p></td>
+					<td><p ${MissingThumbs} class="headings">${ThumbsExceptionPrim}
+							/ ${ThumbsExceptionSec}</p></td>
+				</tr>
+				<tr${Preview}>
+					<td${leftSlapCaptured}><p
+							${MissingLeftFingers} class="headings">${LeftSlapExceptionPrim}
+							/ ${LeftSlapExceptionSec}</p></td>
+					<td${rightSlapCaptured}><p
+							${MissingRightFingers} class="headings">${RightSlapExceptionPrim}
+							/ ${RightSlapExceptionSec}</p></td>
+					<td${thumbsCaptured}><p ${MissingThumbs} class="headings">${ThumbsExceptionPrim}
+							/ ${ThumbsExceptionSec}</p></td>
+				</tr>
+			</table>
+			<br />
+			<div${Preview}>
+				<p class="head">
+					<b>${Consent}</b>
+				</p>
+				<hr />
+				<div class="consent-block">
+					${ConsentData}<br /> <input type="radio" name="consent"
+						id="consent-yes"${SelectedYes}><label for="consent-yes">${Yes}</label>
+					&nbsp;&nbsp;&nbsp; <input type="radio" name="consent"
+						id="consent-no"${SelectedNo}><label for="consent-no">${No}</label>
+				</div>
+			</div>
+			<hr />
+			<table class="dataTable">
+				<tr>
+					<td${ROImage}><img src="${ROImageSource}" border="0"
+						width="80" height="80" /></td>
+					<td><p class="headings">${RONamePrimLabel} /
+							${RONameSecLabel}</p>
+						<br />${ROName}<br />${RONameSec}</td>
+					<td><p class="headings">${RegCenterPrimLabel} /
+							${RegCenterSecLabel}</p>
+						<br />${RegCenter}<br />${RegCenterSec}</td>
+				</tr>
+			</table>
+			<hr />
+			<br />
+		</div>
+		<div${parentPhotoCaptured}>
+			<div ${FaceCaptureEnabled} ${AckReceipt} class="photo">
+				<p class="applicantPhotoLabel">${PhotoPrim} / ${PhotoSec}</p>
+				<img class="applicantPhoto" src="${ApplicantImageSource}" border="0"
+					width="100" height="100" />
+			</div>
+			<div ${AckReceipt} class="photo">
+				<p class="parentPhotoLabel">${ParentPhotoPrim} /
+					${ParentPhotoSec}</p>
+				<img class="parentPhoto" src="${ParentImageSource}" border="0"
+					width="100" height="100" />
+			</div>
+			<div ${FaceCaptureEnabled} ${Preview} class="previewPhoto">
+				<p class="applicantPhotoLabel">${PhotoPrim} / ${PhotoSec}</p>
+				<img class="applicantPhoto" src="${ApplicantImageSource}" border="0"
+					width="100" height="100" />
+			</div>
+			<div ${Preview} class="previewPhoto">
+				<p class="parentPhotoLabel">${ParentPhotoPrim} /
+					${ParentPhotoSec}</p>
+				<img class="parentPhoto" src="${ParentImageSource}" border="0"
+					width="100" height="100" />
+			</div>
+		</div>
+		<div${parentPhotoNotCaptured}>
+			<div ${FaceCaptureEnabled} ${AckReceipt} class="photo">
+				<p class="applicantPhotoLabel2">${PhotoPrim} / ${PhotoSec}</p>
+				<img class="parentPhoto" src="${ApplicantImageSource}" border="0"
+					width="100" height="100" />
+			</div>
+			<div ${FaceCaptureEnabled} ${Preview} class="previewPhoto">
+				<p class="applicantPhotoLabel2">${PhotoPrim} / ${PhotoSec}</p>
+				<img class="parentPhoto" src="${ApplicantImageSource}" border="0"
+					width="100" height="100" />
+			</div>
+		</div>
+		<div${AckReceipt}>
+			<p>${ImportantGuidelines}</p>
+			<ul>${Guidelines}
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

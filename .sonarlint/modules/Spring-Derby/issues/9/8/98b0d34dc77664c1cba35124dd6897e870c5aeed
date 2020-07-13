@@ -1,0 +1,37 @@
+
+q
+squid:S1063"9Replace this use of System.out or System.err by a logger.(éìš¯ûÿÿÿÿ8ˆæ±•¹-HûNRMAJORZ
+CODE_SMELL
+q
+squid:S1067"9Replace this use of System.out or System.err by a logger.(é«œıÿÿÿÿ8’ëçî¸-HüNRMAJORZ
+CODE_SMELL
+q
+squid:S106B"9Replace this use of System.out or System.err by a logger.(ì©½ùÿÿÿÿ8‚„‰ì¸-HıNRMAJORZ
+CODE_SMELL
+rsquid:S3400G"9Remove this method and declare a constant for this value.(¹ÏÓ¨üÿÿÿÿ8éÒã—¹-HşNRMINORZ
+CODE_SMELL
+q
+squid:S106"9Replace this use of System.out or System.err by a logger.(êõ£Íúÿÿÿÿ8«¬¼ì¸-HÿNRMAJORZ
+CODE_SMELL
+q
+squid:S106."9Replace this use of System.out or System.err by a logger.(­©„şûÿÿÿÿ8º¶‚ï¸-H€ORMAJORZ
+CODE_SMELL
+q
+squid:S106!"9Replace this use of System.out or System.err by a logger.(Üüê˜ÿÿÿÿÿ8«¬¼ì¸-HORMAJORZ
+CODE_SMELL
+q
+squid:S106#"9Replace this use of System.out or System.err by a logger.(êõ£Íúÿÿÿÿ8ˆÒ ì¸-H‚ORMAJORZ
+CODE_SMELL
+l
+squid:S106"9Replace this use of System.out or System.err by a logger.(¾Õ”×8Î›áî¸-HƒORMAJORZ
+CODE_SMELL
+k
+squid:S106;"9Replace this use of System.out or System.err by a logger.(÷àŠp8‹­Ñî¸-H„ORMAJORZ
+CODE_SMELL
+q
+squid:S106)"9Replace this use of System.out or System.err by a logger.(×©Í—úÿÿÿÿ8ãÍ†ï¸-H…ORMAJORZ
+CODE_SMELL
+ssquid:UnusedPrivateMethodF"1Remove this unused private "getClassName" method.(«ïŠÃ8éÒã—¹-H†ORMAJORZ
+CODE_SMELL
+ysquid:UselessImportCheck	"8Remove this unused import 'java.util.function.Function'.(»³Í8íÂî–¹-H‡ORMINORZ
+CODE_SMELL

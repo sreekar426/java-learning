@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+</head>
+<body>
+	<div>
+		<h2>Assign Tasks</h2>
+		<table>
+			<tr>
+				<td><label>Project</label></td>
+				<td style="padding-left: 30px"><select id="projectData" onchange="showCustomer(this.value)">
+						<option value="value">--select--</option>
+				</select></td>
+			</tr>
+		</table>
+		
+		<table id="location" border='1'>
+        <tr>
+        <th>Employee Id</th>
+        <th>Employee Name</th>
+        </tr>
+        </table>
+		
+		
+	</div>
+</body>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	
+	$.ajax({
+        url: "/view",
+        datatype: "JSON",
+        type: "Get",
+        success: function (data) {
+            $.each(data, function (index, value) {
+            	 $('#projectData').append('<option value="' + value.projectName + '">' + value.projectName + '</option>');
+            });
+        }
+    });
+	});
+	
+	
+function showCustomer(str) {
+	var pathParam=str;
+	$.ajax(
+		    {
+		    	
+		        type: "GET",
+		        url: "/project/Mosip",
+		        //data: JSON.stringify(pathParam),
+		        contentType: "application/json; charset=utf-8",
+		        dataType: "json",
+		        cache: false,
+		        success: function (data) {
+		        var trHTML = '';
+		        $.each(data, function (key, value) {
+		        	
+		   trHTML += '<tr><td>' + value[key] + '</td><td>' + value[key]  + '</td></tr>';
+		        
+		        
+		            
+		        });
+		        
+		        $('#location').append(trHTML);
+		        
+		        },
+		        
+		        error: function (msg) {
+		            
+		            alert(msg.responseText);
+		        }
+		    });
+	}
+	
+	
+	
+
+
+</script>
+</html>

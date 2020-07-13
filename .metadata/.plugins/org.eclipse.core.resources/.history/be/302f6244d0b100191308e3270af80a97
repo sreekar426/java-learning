@@ -1,0 +1,8 @@
+package com.mindtree.dao.impl;
+
+import com.mindtree.dao.IZoneDao;
+import com.mindtree.repository.ZoneRepository;
+
+public class ZoneDaoImpl implements IZoneDao{
+
+}

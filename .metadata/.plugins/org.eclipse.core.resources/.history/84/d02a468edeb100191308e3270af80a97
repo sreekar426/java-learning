@@ -1,0 +1,18 @@
+package com.mindtree.exception;
+
+public class TaxException extends Exception {
+
+	/** The Constant serialVersionUID. */
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 * Instantiates a new tax exception.
+	 *
+	 * @param exception the exception
+	 */
+	public TaxException(Exception exception) {
+
+		super(exception);
+	}
+
+}

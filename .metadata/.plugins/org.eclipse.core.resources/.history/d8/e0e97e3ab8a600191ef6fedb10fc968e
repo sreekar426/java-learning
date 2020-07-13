@@ -1,0 +1,13 @@
+package com.mindtree.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.mindtree.entity.ZoneTypeEntity;
+
+public interface ZoneRepository extends JpaRepository<ZoneTypeEntity, String> {
+	
+
+	ZoneTypeEntity findByZoneType(String zoneName);
+	
+	
+}

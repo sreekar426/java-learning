@@ -1,0 +1,34 @@
+package com.mindtree.service;
+
+import java.util.List;
+
+import com.mindtree.entity.ZoneTypeEntity;
+import com.mindtree.exception.TaxException;
+
+public interface IZoneService {
+
+	/**
+	 * Gets the all zone type.
+	 *
+	 * @return the all zone type
+	 * @throws TaxException the tax exception
+	 */
+	List<ZoneTypeEntity> getAllZoneType() throws TaxException;
+
+	/**
+	 * Gets the zone type.
+	 *
+	 * @param zoneId the zone id
+	 * @return the zone type
+	 */
+	ZoneTypeEntity getZoneType(String zoneId) throws TaxException;
+	
+	
+	/**
+	 * Save zone details.
+	 *
+	 * @param zone the zone
+	 */
+	void saveZoneDetails(ZoneTypeEntity zone) throws TaxException;
+
+}

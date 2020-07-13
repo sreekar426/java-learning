@@ -1,0 +1,17 @@
+package com.mindtree.entity;
+
+public class Test {
+	
+	    public static void main(String[] args) 
+	    { 
+	        int x = 5; 
+	        change(x); 
+	       
+	    } 
+	    public static void change(int x) 
+	    { 
+	        x = 10; 
+	        System.out.println(x); 
+	    } 
+
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.text {
+	margin-left: 7px;
+	padding-bottom: 15px;
+}
+
+.radioButton {
+	margin-top: -12px;
+}
+</style>
+
+
+
+</head>
+<body>
+
+	<div style="border:1px solid red;" >
+		<div class="text">
+			<p>my concent Text</p>
+		</div>
+		<div class="radioButton">
+			<input type="radio" name="gender" value="Yes"> Yes <input
+				type="radio" name="gender" value="No"> No
+		</div>
+	</div>
+
+
+</body>
+</html>

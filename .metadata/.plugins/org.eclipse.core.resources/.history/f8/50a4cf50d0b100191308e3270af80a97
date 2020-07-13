@@ -1,0 +1,28 @@
+package com.mindtree.dao.impl;
+
+import java.util.List;
+
+import com.mindtree.dao.IZoneDao;
+import com.mindtree.entity.ZoneTypeEntity;
+
+public class ZoneDaoImpl implements IZoneDao{
+
+	@Override
+	public List<ZoneTypeEntity> getAllZones() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ZoneTypeEntity getIndividualZone(String zoneId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void saveZone(ZoneTypeEntity zone) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

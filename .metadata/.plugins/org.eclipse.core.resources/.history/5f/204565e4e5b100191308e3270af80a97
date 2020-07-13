@@ -1,0 +1,12 @@
+#Derby
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=update
+spring.datasource.url=jdbc:derby:DB;create=true
+spring.datasource.username=admin
+spring.datasource.password=password
+spring.datasource.driver-class-name=org.apache.derby.jdbc.EmbeddedDriver
+spring.jpa.properties.hibernate.dialect =org.hibernate.dialect.DerbyDialect
+
+#Logger
+logging.level.root=WARN
+logging.level.com.baeldung=TRACE

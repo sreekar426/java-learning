@@ -1,0 +1,31 @@
+package com.mindtree.java.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class TaxMangmentController {
+
+	/**
+	 * Adds the tax.
+	 *
+	 * @param map the map
+	 * @return the string
+	 */
+	@GetMapping("/addTax")
+	public String addTax(ModelMap map) {
+		return "addTax";
+	}
+
+	/**
+	 * View tax.
+	 *
+	 * @param map the map
+	 * @return the string
+	 */
+	@GetMapping("/viewTax")
+	public String viewTax(ModelMap map) {
+		return "viewTax";
+	}
+}

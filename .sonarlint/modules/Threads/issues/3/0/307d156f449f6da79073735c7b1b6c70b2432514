@@ -1,0 +1,23 @@
+
+l
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÜÌŠ‹8Ì—óú÷-HÓRRMAJORZ
+CODE_SMELL
+€squid:S1871"LThis branch's code block is the same as the block for the branch on line 26.(Ñïåˆ8ŸžÀ›ø-H˜TRMAJORZ
+CODE_SMELL
+q
+squid:S106
+"9Replace this use of System.out or System.err by a logger.(¤Ô®éøÿÿÿÿ8Ì—óú÷-HÒRRMAJORZ
+CODE_SMELL
+…squid:S1871"LThis branch's code block is the same as the block for the branch on line 26.(• Óêþÿÿÿÿ8ŸžÀ›ø-H–TRMAJORZ
+CODE_SMELL
+ƒsquid:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(›¯’g8ÍÆÁû÷-HïRRMAJORZ
+CODE_SMELL
+Œsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(›¯’g8ÍÆÁû÷-HìRRMINORZ
+CODE_SMELL
+qsquid:S1197"8Move the array designator from the variable to the type.(¡þÏÖøÿÿÿÿ8ù•„û÷-HÔRRMINORZ
+CODE_SMELL
+q
+squid:S106	"9Replace this use of System.out or System.err by a logger.(÷±Â’ýÿÿÿÿ8ù•„û÷-H×RRMAJORZ
+CODE_SMELL
+Žsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(ÒŸ²øþÿÿÿÿ8›ü¢œø-H™TRCRITICALZ
+CODE_SMELL

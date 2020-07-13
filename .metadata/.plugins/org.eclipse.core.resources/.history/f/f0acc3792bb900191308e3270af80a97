@@ -1,0 +1,35 @@
+package com.sreekar.compare;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+
+		List<Mobile> mobile = new ArrayList<>();
+		mobile.add(new Mobile("Samsung S10", 2019, 56000));
+		mobile.add(new Mobile("One Plus 7 Pro", 2019, 45000));
+		mobile.add(new Mobile("One Plus 5", 2017, 35999));
+		mobile.add(new Mobile("Apple X", 2018, 79999));
+		
+		Comparator<Mobile> compare=new Comparator<Mobile>() {
+			
+			@Override
+			public int compare(Mobile o1, Mobile o2) {
+				
+				return 0;
+			}
+		};
+
+		Collections.sort(mobile,);
+
+		for (Mobile result : mobile) {
+			System.out.println(result);
+		}
+
+	}
+
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="js/main.js" type="text/javascript"></script>
+<style>
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 5px;
+	text-align: left;
+}
+
+div.a {
+	font-weight: bold;
+	padding: 5px;
+	text-align: center;
+}
+
+.temp {
+	text-align: right;
+}
+
+div.d {
+	padding-left: 10px;
+	padding-top: 5px;
+	text-align: left;
+	padding-top: 5px;
+}
+</style>
+
+</head>
+<body>
+	<div class="d">
+		<a href="/" onmouseover="this.style.color='blue';"
+			onmouseout="this.style.color='black';">Home</a><br>
+	</div>
+
+	<div class="a">
+		<p>Zonal Wise Collection of Property tax for the year 2014</p>
+		<table style="width: 100%" id="tableId">
+			<tr>
+				<th>Zone Name</th>
+				<th>Property Type</th>
+				<th>Amount Collected</th>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

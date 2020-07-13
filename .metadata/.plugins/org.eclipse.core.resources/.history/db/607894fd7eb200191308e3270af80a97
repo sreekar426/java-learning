@@ -1,0 +1,30 @@
+package com.mindtree.java;
+
+import org.junit.Rule;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.MockitoJUnit;
+import org.mockito.junit.MockitoRule;
+
+import com.mindtree.dao.IZoneDao;
+import com.mindtree.dao.impl.ZoneDaoImpl;
+import com.mindtree.service.IZoneService;
+
+public class ZoneDaoImplTest {
+
+	/** The mockito rule. */
+	@Rule
+	public MockitoRule mockitoRule = MockitoJUnit.rule();
+
+	/** The zone service. */
+	@Mock
+	IZoneService zoneService;
+
+	/** The zone dao. */
+	@Mock
+	IZoneDao zoneDao;
+
+	@InjectMocks
+	ZoneDaoImpl zoneDaoImpl;
+
+}

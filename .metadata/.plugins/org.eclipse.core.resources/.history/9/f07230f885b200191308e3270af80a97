@@ -1,0 +1,71 @@
+package com.mindtree.dao.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataAccessException;
+import org.springframework.stereotype.Repository;
+
+import com.mindtree.dao.IZoneDao;
+import com.mindtree.entity.ZoneTypeEntity;
+import com.mindtree.exception.TaxException;
+import com.mindtree.repository.ZoneRepository;
+
+/**
+ * The Class ZoneDaoImpl.
+ */
+@Repository
+public class ZoneDaoImpl implements IZoneDao {
+
+	/** The zone repository. */
+	@Autowired
+	ZoneRepository zoneRepository;
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see com.mindtree.dao.IZoneDao#getAllZones()
+	 */
+	@Override
+	public List<ZoneTypeEntity> getAllZones() throws TaxException {
+		List<ZoneTypeEntity> zoneTypeEntities = null;
+		try {
+			zoneTypeEntities = zoneRepository.findAll();
+		} catch (TaxException dataAccessException) {
+			throw new TaxException(dataAccessException);
+		}
+		return zoneTypeEntities;
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see com.mindtree.dao.IZoneDao#getIndividualZone(java.lang.String)
+	 */
+	@Override
+	public ZoneTypeEntity getIndividualZone(String zoneId) throws TaxException {
+		ZoneTypeEntity zoneTypeEntity = null;
+		try {
+			zoneTypeEntity = zoneRepository.findByZoneType(zoneId);
+		} catch (TaxException accessException) {
+			throw new TaxException(accessException);
+		}
+		return zoneTypeEntity;
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see com.mindtree.dao.IZoneDao#saveZone(com.mindtree.entity.ZoneTypeEntity)
+	 */
+	@Override
+	public void saveZone(ZoneTypeEntity zone) throws TaxException {
+		try {
+			zoneRepository.save(zone);
+		} catch (RuntimeException accessException) {
+			throw new TaxException(accessException);
+		}
+
+	}
+
+}

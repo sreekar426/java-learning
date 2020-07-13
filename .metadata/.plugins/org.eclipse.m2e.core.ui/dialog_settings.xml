@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="D:\Temp\mosip-functional-test"/>
+			<item value="C:\Users\m1048290\Downloads\registration-master (1)\registration-master\registration"/>
+			<item value="C:\Users\m1048290\Downloads\Hibernate-one-to-many-annotation\HibernateExample"/>
+			<item value="C:\Users\m1048290\Downloads\basic-hibernate-example-master\HibernateSample"/>
+			<item value="D:\SpringBootOauth\spring-boot-exceptionhandling"/>
+			<item value="C:\Users\m1048290\Downloads\SpringExceptionHandling"/>
+			<item value="D:\SpringBootOauth\oauthClient\oauthClient"/>
+			<item value="D:\SpringBootOauth\spring.oauthClient"/>
+			<item value="D:\SpringBootOauth\AuthorizationServerApplication"/>
+			<item value="C:\Users\m1048290\Desktop\Spring_Boot_MVC_Example"/>
+			<item value="C:\Users\m1048290\git\spring-boot\Spring_Boot_MVC_Example"/>
+			<item value="C:\Users\m1048290\Downloads\Spring_Boot_MVC_Example"/>
+			<item value="D:\Spring-Boot-Ws\sample-project"/>
+			<item value="C:\Users\m1048290\Downloads\spring-boot-web-jsp"/>
+			<item value="D:\Spring-Boot-Ws\Employee-Managment"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

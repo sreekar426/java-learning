@@ -1,0 +1,37 @@
+package com.mindtree.dao;
+
+import java.util.List;
+
+import com.mindtree.entity.ZoneTypeEntity;
+import com.mindtree.exception.TaxException;
+
+/**
+ * The Interface IZoneDao.
+ */
+public interface IZoneDao {
+
+	/**
+	 * Gets the all zone type.
+	 *
+	 * @return the all zone type
+	 */
+	List<ZoneTypeEntity> getAllZones() throws TaxException;
+
+	/**
+	 * Gets the zone type.
+	 *
+	 * @param zoneId the zone id
+	 * @return the zone type
+	 * @throws TaxException the tax exception
+	 */
+	ZoneTypeEntity getIndividualZone(String zoneId) throws TaxException;
+
+	/**
+	 * Save zone details.
+	 *
+	 * @param zone the zone
+	 * @throws TaxException the tax exception
+	 */
+	void saveZone(ZoneTypeEntity zone) throws TaxException;
+
+}

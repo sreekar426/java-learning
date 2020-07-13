@@ -1,0 +1,5 @@
+package com.home.hibernate.entity;
+
+public class StudentMapper {
+
+}

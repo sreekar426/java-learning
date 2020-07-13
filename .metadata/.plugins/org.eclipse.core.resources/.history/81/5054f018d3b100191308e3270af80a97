@@ -1,0 +1,13 @@
+package com.mindtree.dao;
+
+import com.mindtree.entity.DescriptionEntity;
+
+/**
+ * The Interface IDescriptionDao.
+ */
+public interface IDescriptionDao {
+
+	
+	public DescriptionEntity getDesc(String descType, int zoneId);
+
+}

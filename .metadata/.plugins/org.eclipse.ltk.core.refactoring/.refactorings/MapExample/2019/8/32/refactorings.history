@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;empName&apos; in &apos;com.sreekar.map.Employee&apos; to &apos;empId&apos;&#x0D;&#x0A;- Original project: &apos;MapExample&apos;&#x0D;&#x0A;- Original element: &apos;com.sreekar.map.Employee.empName&apos;&#x0D;&#x0A;- Renamed element: &apos;com.sreekar.map.Employee.empId&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;empName&apos;" flags="589826" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;com.sreekar.map{Demo.java[Employee^empName" name="empId" references="true" setter="false" stamp="1565153778891" textual="false" version="1.0"/>
+</session>

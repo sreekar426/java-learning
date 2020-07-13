@@ -1,0 +1,12 @@
+package com.mindtree.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.mindtree.entity.DescriptionEntity;
+import com.mindtree.entity.DescriptionTypeEntity;
+
+public interface DescriptionRepository extends JpaRepository<DescriptionEntity, String> {
+
+	DescriptionEntity findByDescTypeAndZoneZoneId(String descType,int zoneId);
+
+}

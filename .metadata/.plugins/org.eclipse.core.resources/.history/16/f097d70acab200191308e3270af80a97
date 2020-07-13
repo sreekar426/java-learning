@@ -1,0 +1,40 @@
+package com.mindtree.java;
+
+import org.junit.Rule;
+import org.junit.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.junit.MockitoJUnit;
+import org.mockito.junit.MockitoRule;
+
+import com.mindtree.dao.IDescriptionDao;
+import com.mindtree.dao.IPropertyDao;
+import com.mindtree.entity.PropertyEntity;
+import com.mindtree.exception.TaxException;
+import com.mindtree.service.impl.DescriptionServiceImpl;
+import com.mindtree.service.impl.PropertyServiceImpl;
+
+public class PropertyTest {
+
+	/** The mockito rule. */
+	@Rule
+	public MockitoRule mockitoRule = MockitoJUnit.rule();
+
+	@Mock
+	IPropertyDao propertyDao;
+
+	@InjectMocks
+	PropertyServiceImpl propertyServiceImpl;
+
+	@Test
+	public void property() throws TaxException {
+		PropertyEntity propertyEntity=new PropertyEntity();
+		propertyEntity.setPropertyId(1);
+		propertyEntity.setStatus("Owner");
+		propertyEntity.setUav(2.50);
+		Mockito.when(propertyDao.getProperty(Mockito.anyInt(), Mockito.anyString())).thenReturn(propertyEntity);
+		propertyServiceImpl.getPropertyDetails(1, "owner");
+	}
+
+}

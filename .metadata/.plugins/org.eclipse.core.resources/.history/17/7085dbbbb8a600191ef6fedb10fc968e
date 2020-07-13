@@ -1,0 +1,8 @@
+package com.mindtree.service.impl;
+
+import com.mindtree.repository.ZoneRepository;
+import com.mindtree.service.IZoneService;
+
+public class ZoneService implements IZoneService {
+
+}

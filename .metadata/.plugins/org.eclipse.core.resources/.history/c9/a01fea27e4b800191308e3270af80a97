@@ -1,0 +1,33 @@
+package com.sreekar.compare;
+
+public class Mobile {
+
+	private String name;
+	private int yearOfManufacture;
+	private double price;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getYearOfManufacture() {
+		return yearOfManufacture;
+	}
+
+	public void setYearOfManufacture(int yearOfManufacture) {
+		this.yearOfManufacture = yearOfManufacture;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+}

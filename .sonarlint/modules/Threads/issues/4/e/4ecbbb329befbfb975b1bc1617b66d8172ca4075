@@ -1,0 +1,18 @@
+
+jsquid:S1197"8Move the array designator from the variable to the type.(¡şÏÖøÿÿÿÿH‹TRMINORZ
+CODE_SMELL
+j
+squid:S106#"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿHŒTRMAJORZ
+CODE_SMELL
+gsquid:S1161
+":Add the "@Override" annotation above this method signature(“–ışHTRMAJORZ
+CODE_SMELL
+j
+squid:S106"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿHTRMAJORZ
+CODE_SMELL
+q
+squid:S106"9Replace this use of System.out or System.err by a logger.(¡À„®üÿÿÿÿ8÷”ú«í-HTRMAJORZ
+CODE_SMELL
+q
+squid:S106)"9Replace this use of System.out or System.err by a logger.( ¯àŒûÿÿÿÿ8Ê°Ã¨ï-HTRMAJORZ
+CODE_SMELL

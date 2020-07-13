@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<form action="">
+	<div style="background-color: red">
+		<input type="radio" name="gender" value="Yes"> Yes<br>
+		<input type="radio" name="gender" value="No"> No<br>
+	</div>
+	</form>
+
+
+</body>
+</html>

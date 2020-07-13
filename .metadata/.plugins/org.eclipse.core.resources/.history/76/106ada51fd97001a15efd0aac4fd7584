@@ -1,0 +1,16 @@
+package com.sreekar.controller;
+
+import org.springframework.http.HttpEntity;
+import org.springframework.web.client.RestTemplate;
+
+public class Stock {
+public static void main(String[] args) {
+	String Url="https://chartink.com/screener/process";
+	RestTemplate rest=new RestTemplate();
+	
+	
+	HttpEntity<?> request = new HttpEntity<>(employee, headers);
+	rest.postForEntity(Url, request, Object.class);
+}
+
+}

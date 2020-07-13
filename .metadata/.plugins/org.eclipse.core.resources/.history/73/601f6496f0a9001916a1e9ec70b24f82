@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<style>
+.text {
+	margin-left: 7px;
+	margin-top: -15px;
+}
+
+.radioButton {
+	margin-top: -10px;
+}
+
+.temp {
+	border: 1px solid red;
+	padding-bottom: 5px;
+}
+</style>
+
+
+
+</head>
+<body>
+
+	
+	
+
+		<div class="consent-block" id="radioId">
+			my consent <br /> 
+		<input type="radio" name="consent" id="consent-yes"${SelectedYes}><label for="consent-yes" onchange="changeColour(this)">Yes</label>
+			&nbsp;&nbsp;&nbsp; 
+		<input type="radio" name="consent" id="consent-no"${SelectedNo}><label for="consent-no" onchange="changeColour(this)">No</label>
+		</div>
+	
+
+
+</body>
+<script type="text/javascript">
+	function changeColour(element) {
+	
+		var div = document.getElementById('radioId');
+		div.style = 'border: 1px solid green';
+
+	}
+</script>
+</html>

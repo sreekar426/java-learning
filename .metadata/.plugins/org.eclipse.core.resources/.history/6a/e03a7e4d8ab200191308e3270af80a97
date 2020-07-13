@@ -1,0 +1,38 @@
+package com.mindtree.java;
+
+import static org.junit.Assert.assertArrayEquals;
+
+import org.junit.Rule;
+import org.junit.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.junit.MockitoJUnit;
+import org.mockito.junit.MockitoRule;
+
+import com.mindtree.dao.IDescriptionDao;
+import com.mindtree.entity.DescriptionEntity;
+import com.mindtree.exception.TaxException;
+import com.mindtree.service.impl.DescriptionServiceImpl;
+
+public class DescriptionTest {
+
+	/** The mockito rule. */
+	@Rule
+	public MockitoRule mockitoRule = MockitoJUnit.rule();
+
+	@Mock
+	IDescriptionDao descriptionDao;
+
+	@InjectMocks
+	DescriptionServiceImpl descriptionServiceImpl;
+
+	@Test
+	public void descriptionTest() throws TaxException {
+		DescriptionEntity myDesc=new DescriptionEntity();
+		Mockito.when(descriptionDao.getDesc(Mockito.anyString(), Mockito.anyInt())).thenReturn(myDesc);
+		descriptionServiceImpl.getDescType("owner", 1);
+		assertEquals("owner", "owner");
+	}
+
+}

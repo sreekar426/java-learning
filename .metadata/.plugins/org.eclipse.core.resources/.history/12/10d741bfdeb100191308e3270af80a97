@@ -1,0 +1,21 @@
+package com.mindtree.dao;
+
+import com.mindtree.entity.PropertyEntity;
+import com.mindtree.exception.TaxException;
+
+/**
+ * The Interface IPropertyDao.
+ */
+public interface IPropertyDao {
+
+	
+	/**
+	 * Gets the property.
+	 *
+	 * @param descId the desc id
+	 * @param status the status
+	 * @return the property
+	 */
+	public PropertyEntity getProperty(int descId, String status) throws TaxException;
+
+}

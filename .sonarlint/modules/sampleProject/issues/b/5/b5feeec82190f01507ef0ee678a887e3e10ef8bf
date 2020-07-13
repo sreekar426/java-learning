@@ -1,0 +1,10 @@
+
+“squid:S22934"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÿÊ¬«ûÿÿÿÿ8—­ªë”.H“RMINORZ
+CODE_SMELL
+vsquid:S1126r"AReplace this if-then-else statement by a single return statement.(ºá8è˜Õğ”.H’RMINORZ
+CODE_SMELL
+“squid:S2293|"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÿÊ¬«ûÿÿÿÿ8œ®—ñ”.H”RMINORZ
+CODE_SMELL
+r
+squid:S106B"9Replace this use of System.out or System.err by a logger.(ôõ‡Öıÿÿÿÿ8ÇéÅù•.H™RMAJORZ
+CODE_SMELL

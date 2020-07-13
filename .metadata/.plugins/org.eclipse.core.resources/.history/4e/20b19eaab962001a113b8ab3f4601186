@@ -1,0 +1,7 @@
+driver=com.mysql.jdbc.Driver
+url=jdbc:mysql://localhost:7000/userservice?useSSL=false
+user=root
+password=root
+
+org.hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
+hibernate.show_sql=true

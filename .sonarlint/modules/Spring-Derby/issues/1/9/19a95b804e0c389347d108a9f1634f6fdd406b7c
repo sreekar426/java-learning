@@ -1,0 +1,15 @@
+
+–squid:UselessImportCheck"URemove this unused import 'org.springframework.web.bind.annotation.ExceptionHandler'.(–Œ•¬8È©İÃñ-HìORMINORZ
+CODE_SMELL
+ƒsquid:UselessImportCheck"BRemove this unused import 'javax.persistence.PersistenceProperty'.(Â‘İ¬8˜ğÙ»»-HˆORMINORZ
+CODE_SMELL
+q
+squid:S106k"9Replace this use of System.out or System.err by a logger.(§ë¸ôúÿÿÿÿ8Ò®ÊÁ°-H‹ORMAJORZ
+CODE_SMELL
+ß%squid:RedundantThrowsDeclarationCheckU"‹Remove the declaration of thrown exception 'com.fasterxml.jackson.core.JsonProcessingException', as it cannot be thrown from method's body.(Ç¿â‰şÿÿÿÿ8³ïÆâ°-HŒORMINORZ
+CODE_SMELL
+jsquid:S3655‰"7Call "Optional#isPresent()" before accessing the value.(˜ÍÊ˜ùÿÿÿÿ8Êíù°-HŠORMAJORZBUG
+Õ%squid:RedundantThrowsDeclarationCheck\"Remove the declaration of thrown exception 'com.mindtree.exception.MyCustomException', as it cannot be thrown from method's body.(ƒ‘Éûûÿÿÿÿ8°¼ÆÃñ-HãORMINORZ
+CODE_SMELL
+—squid:UselessImportCheck"WRemove this unused import 'org.springframework.beans.factory.config.BeanPostProcessor'.(âŠÍr8˜ğÙ»»-H‰ORMINORZ
+CODE_SMELL

@@ -1,0 +1,93 @@
+package com.mindtree.java;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.Rule;
+import org.junit.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.junit.MockitoJUnit;
+import org.mockito.junit.MockitoRule;
+
+import com.mindtree.dao.IZoneDao;
+import com.mindtree.dao.impl.ZoneDaoImpl;
+import com.mindtree.entity.ZoneTypeEntity;
+import com.mindtree.exception.TaxException;
+import com.mindtree.repository.ZoneRepository;
+import com.mindtree.service.IZoneService;
+
+public class ZoneDaoImplTest {
+
+	/** The mockito rule. */
+	@Rule
+	public MockitoRule mockitoRule = MockitoJUnit.rule();
+
+	/** The zone service. */
+	@Mock
+	IZoneService zoneService;
+
+	/** The zone DAO. */
+	@Mock
+	IZoneDao zoneDao;
+
+	@Mock
+	ZoneRepository zoneRepository;
+
+	@InjectMocks
+	ZoneDaoImpl zoneDaoImpl;
+
+	/**
+	 * Gets the all zone.
+	 *
+	 * @return the all zone
+	 * @throws TaxException the tax exception
+	 */
+	@Test
+	public void getAllZone() throws TaxException {
+
+		List<ZoneTypeEntity> myList = new ArrayList<>();
+		ZoneTypeEntity zoneTypeEntity = new ZoneTypeEntity();
+		zoneTypeEntity.setZoneId(1);
+		zoneTypeEntity.setZoneType("Zone A");
+		myList.add(zoneTypeEntity);
+		Mockito.when(zoneRepository.findAll()).thenReturn(myList);
+		List<ZoneTypeEntity> result = zoneDaoImpl.getAllZones();
+		assertNotNull(result);
+
+	}
+
+	@Test
+	public void getOneZone() throws TaxException {
+		ZoneTypeEntity zoneTypeEntity = new ZoneTypeEntity();
+		zoneTypeEntity.setZoneId(1);
+		zoneTypeEntity.setZoneType("Zone A");
+		Mockito.when(zoneRepository.findByZoneType(Mockito.anyString())).thenReturn(zoneTypeEntity);
+		ZoneTypeEntity zoneType = zoneDaoImpl.getIndividualZone("Zone A");
+		assertEquals(zoneType.getZoneType(), "Zone A");
+	}
+
+	@Test
+	public void save() throws TaxException {
+		ZoneTypeEntity zoneTypeEntity = new ZoneTypeEntity();
+		zoneTypeEntity.setZoneId(1);
+		zoneTypeEntity.setZoneType("Zone A");
+		zoneDaoImpl.saveZone(zoneTypeEntity);
+
+	}
+	
+	@Test
+	public void saveException() throws TaxException {
+		ZoneTypeEntity zoneTypeEntity = new ZoneTypeEntity();
+		zoneTypeEntity.setZoneId(1);
+		zoneTypeEntity.setZoneType("Zone A");
+		zoneDaoImpl.saveZone(zoneTypeEntity);
+
+	}
+	
+	
+}

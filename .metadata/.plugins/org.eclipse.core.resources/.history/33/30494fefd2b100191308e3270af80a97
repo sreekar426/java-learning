@@ -1,0 +1,32 @@
+package com.mindtree.service.impl;
+
+import javax.transaction.Transactional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.mindtree.dao.IDescriptionDao;
+import com.mindtree.entity.DescriptionEntity;
+import com.mindtree.service.IDescriptionService;
+
+@Service
+@Transactional
+public class DescriptionServiceImpl implements IDescriptionService {
+
+	/** The description dao. */
+	@Autowired
+	IDescriptionDao descriptionDao;
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see com.mindtree.service.IDescriptionService#getDescType(java.lang.String,
+	 * int)
+	 */
+	@Override
+	public DescriptionEntity getDescType(String descType, int zoneId) {
+		return descriptionDao.getDescType(descType, zoneId);
+
+	}
+
+}

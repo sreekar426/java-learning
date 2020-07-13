@@ -1,0 +1,14 @@
+package com.mindtree.service.impl;
+
+import com.mindtree.entity.PropertyEntity;
+import com.mindtree.service.IPropertyService;
+
+public class PropertyServiceImpl implements IPropertyService{
+
+	@Override
+	public PropertyEntity getPropertyDetails(int descId, String status) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

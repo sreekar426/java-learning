@@ -1,0 +1,32 @@
+
+^squid:S19056")Remove this unnecessary cast to "Object".(½Èæ8Ä”±‹¢.H²RMINORZ
+CODE_SMELL
+f
+squid:S106b"9Replace this use of System.out or System.err by a logger.(ÆÀûıH™±RMAJORZ
+CODE_SMELL
+k
+squid:S1065"9Replace this use of System.out or System.err by a logger.(«ÄçôşÿÿÿÿH•±RMAJORZ
+CODE_SMELL
+dsquid:S1135i"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿH›±RINFOZ
+CODE_SMELL
+k
+squid:S106M"9Replace this use of System.out or System.err by a logger.(¿‰Ø»ÿÿÿÿÿH—±RMAJORZ
+CODE_SMELL
+Ysquid:S1148j"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH±RMINORZVULNERABILITY
+}squid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æÀôúHœ±RMINORZ
+CODE_SMELL
+~squid:CommentedOutCodeLine%"<This block of commented-out lines of code should be removed.(öŒ¤çúÿÿÿÿH“±RMAJORZ
+CODE_SMELL
+ysquid:CommentedOutCodeLine'"<This block of commented-out lines of code should be removed.(‚ãÈ·H”±RMAJORZ
+CODE_SMELL
+f
+squid:S106n"9Replace this use of System.out or System.err by a logger.(¤¬„éHš±RMAJORZ
+CODE_SMELL
+f
+squid:S106^"9Replace this use of System.out or System.err by a logger.(ÆÀûıH˜±RMAJORZ
+CODE_SMELL
+k
+squid:S106C"9Replace this use of System.out or System.err by a logger.(…ÄÙ³şÿÿÿÿH–±RMAJORZ
+CODE_SMELL
+csquid:S1905:")Remove this unnecessary cast to "Object".(â¨¨ûøÿÿÿÿ8›¶±‹¢.H—²RMINORZ
+CODE_SMELL

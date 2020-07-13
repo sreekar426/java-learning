@@ -1,0 +1,16 @@
+
+‘squid:S1192	"UDefine a constant instead of duplicating this literal "Current Thread Name " 4 times.(ñ›Ç‡ýÿÿÿÿ8¨‰ô¦í-HÏKRCRITICALZ
+CODE_SMELL
+q
+squid:S106	"9Replace this use of System.out or System.err by a logger.(ñ›Ç‡ýÿÿÿÿ8ÑÎí¦í-HÍKRMAJORZ
+CODE_SMELL
+ksquid:S2134"@Don't extend "Thread", since the "run" method is not overridden.(—ð¼£úÿÿÿÿHÄKRMAJORZBUG
+q
+squid:S106"9Replace this use of System.out or System.err by a logger.(ñ›Ç‡ýÿÿÿÿ8¥¥ð¦í-HÎKRMAJORZ
+CODE_SMELL
+q
+squid:S106"9Replace this use of System.out or System.err by a logger.(¦žèÅøÿÿÿÿ8¨‰ô¦í-HÐKRMAJORZ
+CODE_SMELL
+q
+squid:S106"9Replace this use of System.out or System.err by a logger.(¦žèÅøÿÿÿÿ8­ÿû¦í-HÑKRMAJORZ
+CODE_SMELL

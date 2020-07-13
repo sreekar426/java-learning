@@ -1,0 +1,19 @@
+
+jsquid:S1197"8Move the array designator from the variable to the type.(ùï¾ŽÿÿÿÿÿH«yRMINORZ
+CODE_SMELL
+j
+squid:S106"9Replace this use of System.out or System.err by a logger.(°§ÄÎúÿÿÿÿH¬yRMAJORZ
+CODE_SMELL
+}squid:CommentedOutCodeLine	"<This block of commented-out lines of code should be removed.(øµ‘ðÿÿÿÿÿH­yRMAJORZ
+CODE_SMELL
+j
+squid:S106"9Replace this use of System.out or System.err by a logger.(¦®õ­úÿÿÿÿH®yRMAJORZ
+CODE_SMELL
+j
+squid:S106"9Replace this use of System.out or System.err by a logger.(é©Ñ¥úÿÿÿÿH¯yRMAJORZ
+CODE_SMELL
+nsquid:S1075"ARefactor your code to get this URI from a customizable parameter.(–˜ÌH°yRMINORZ
+CODE_SMELL
+d
+squid:S106"9Replace this use of System.out or System.err by a logger.(ð‹žqH±yRMAJORZ
+CODE_SMELL

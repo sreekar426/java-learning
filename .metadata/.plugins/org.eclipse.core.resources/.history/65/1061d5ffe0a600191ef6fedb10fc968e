@@ -1,0 +1,15 @@
+package com.mindtree.utill;
+
+public class Calculation {
+
+	
+	public static String taxCalculation(double areaSqMts,double uav,String yearId) {
+		double areaOfProperty = Math.round(areaSqMts * 100.0) / 100.0;
+		
+		
+		return yearId;
+		
+	}
+	
+	
+}

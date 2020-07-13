@@ -1,0 +1,38 @@
+package com.mindtree.utill;
+
+import java.time.Year;
+
+public class TaxCalculationUtill {
+
+	/**
+	 * Tax calculation.
+	 *
+	 * @param areaSqMts the area sq mts
+	 * @param uaValue   the ua value
+	 * @param yearId    the year id
+	 * @return the double
+	 */
+	public static double taxCalculation(double areaSqMts, double uaValue, String yearId) {
+
+		double areaOfProperty = Math.round(areaSqMts * 100.0) / 100.0;
+		double t1 = (float) (areaOfProperty * uaValue * 10);
+		int yearValidation = Year.now().getValue();
+		int depriciationValue = yearValidation - Integer.parseInt(yearId);
+
+		if (depriciationValue < 60) {
+			double t2 = t1 - (depriciationValue * t1) / 100;
+			double t3 = t2 + (t2 * 20) / 100;
+			double t4 = t3 + (t3 * 24) / 100;
+
+			return Math.round((t3 + t4) * 100.0) / 100.0;
+
+		} else {
+			double t2 = t1 - (60 * t1) / 100;
+			double t3 = t2 + (t2 * 20) / 100;
+			double t4 = t3 + (t3 * 24) / 100;
+			return Math.round((t3 + t4) * 100.0) / 100.0;
+		}
+
+	}
+
+}

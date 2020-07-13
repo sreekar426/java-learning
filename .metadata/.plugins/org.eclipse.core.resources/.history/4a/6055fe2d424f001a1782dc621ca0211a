@@ -1,0 +1,19 @@
+package com.thread;
+
+public class TestClass {
+	public static void main(String[] args) {
+		
+	}
+	
+	public static Integer getVal(int val) {
+		
+		int temp=val;
+		
+		if(val<5) {
+			return 0;
+		}else {
+			return null;
+		}
+	}
+
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1557980860967_0" label="Java Main Sources" name="main">
+<item elementID="=myApp/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=myApp/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Spring-Derby/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Spring-Derby/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1557980861000_1" label="Java Test Sources" name="test">
+<item elementID="=myApp/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Spring-Derby/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1587548065985_3" label="registration-parent" name="registration-parent">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/registration-libs" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/registration-services" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/registration-parent" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/registration-client" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1588055055023_4" label="mosip-functional-test" name="mosip-functional-test">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/regproc-functional-test" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/mosip-happypath-test" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/registration-functional-test" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/mosip-functional-test" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/ida-functional-test" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/prereg-functional-test" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1557980865619_2" label="Window Working Set" name="Aggregate for window 1557980865619"/>
+</workingSetManager>

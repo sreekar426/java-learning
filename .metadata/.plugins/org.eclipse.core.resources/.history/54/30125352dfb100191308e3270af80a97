@@ -1,0 +1,36 @@
+package com.mindtree.service.impl;
+
+import javax.transaction.Transactional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.mindtree.dao.IPropertyDao;
+import com.mindtree.entity.PropertyEntity;
+import com.mindtree.exception.TaxException;
+import com.mindtree.service.IPropertyService;
+
+/**
+ * The Class PropertyServiceImpl.
+ */
+@Service
+@Transactional
+public class PropertyServiceImpl implements IPropertyService {
+
+	/** The property DAO. */
+	@Autowired
+	private IPropertyDao propertyDao;
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see com.mindtree.service.IPropertyService#getPropertyDetails(int,
+	 * java.lang.String)
+	 */
+	@Override
+	public PropertyEntity getPropertyDetails(int descId, String status) throws TaxException  {
+
+		return propertyDao.getProperty(descId, status);
+	}
+
+}

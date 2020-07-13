@@ -1,0 +1,43 @@
+
+hsquid:S2864ö"4Iterate over the "entrySet" instead of the "keySet".(éãĞşıÿÿÿÿH˜RMAJORZ
+CODE_SMELL
+csquid:S2864‘"4Iterate over the "entrySet" instead of the "keySet".(° ªH˜RMAJORZ
+CODE_SMELL
+zsquid:CommentedOutCodeLineë"<This block of commented-out lines of code should be removed.(Ã¼¬ÑH‘˜RMAJORZ
+CODE_SMELL
+squid:CommentedOutCodeLineˆ"<This block of commented-out lines of code should be removed.(”İÍŞøÿÿÿÿH’˜RMAJORZ
+CODE_SMELL
+ysquid:CommentedOutCodeLineÌ"<This block of commented-out lines of code should be removed.(¯ÂºnH“˜RMAJORZ
+CODE_SMELL
+`squid:S1135ß"2Complete the task associated to this TODO comment.(«áºêH”˜RINFOZ
+CODE_SMELL
+`squid:S1135§"2Complete the task associated to this TODO comment.(Ç¾¢ƒH•˜RINFOZ
+CODE_SMELL
+dsquid:S1481‚"0Remove this unused "pobCategory" local variable.(ÖûÉ£şÿÿÿÿH–˜RMINORZ
+CODE_SMELL
+„squid:S3776÷"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ÛÂH—˜RCRITICALZ
+CODE_SMELL
+„squid:S3776µ"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ÄïÄÎH˜˜RCRITICALZ
+CODE_SMELL
+Ksquid:S2326÷"T is not used in the method.(ÛÂH™˜RMAJORZ
+CODE_SMELL
+`squid:S1602Ù",Remove useless curly braces around statement(Ãİ™ªÿÿÿÿÿHš˜RMINORZ
+CODE_SMELL
+`squid:S1602å",Remove useless curly braces around statement(™Ö…üÿÿÿÿH›˜RMINORZ
+CODE_SMELL
+\squid:S1604"(Make this anonymous inner class a lambda(­—±ıÿÿÿÿHœ˜RMAJORZ
+CODE_SMELL
+Vsquid:S1604Ğ"(Make this anonymous inner class a lambda(«Å!H˜RMAJORZ
+CODE_SMELL
+ssquid:S1854‚"?Remove this useless assignment to local variable "pobCategory".(ÖûÉ£şÿÿÿÿH˜RMAJORZ
+CODE_SMELL
+msquid:S1854…"?Remove this useless assignment to local variable "pobCategory".(²»á5HŸ˜RMAJORZ
+CODE_SMELL
+gsquid:S1611•"3Remove the parentheses around the "event" parameter(÷¼™ƒùÿÿÿÿH ˜RMINORZ
+CODE_SMELL
+msquid:S1611Ó"9Remove the parentheses around the "actionEvent" parameter(„š†³úÿÿÿÿH¡˜RMINORZ
+CODE_SMELL
+gsquid:S1611é"3Remove the parentheses around the "event" parameter(Ç£ùÿÿÿÿH¢˜RMINORZ
+CODE_SMELL
+bsquid:S1611í"3Remove the parentheses around the "event" parameter(ªøèäH£˜RMINORZ
+CODE_SMELL

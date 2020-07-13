@@ -1,0 +1,83 @@
+package com.mindtree.java;
+
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.mockito.Mockito.doNothing;
+import static org.mockito.Mockito.mock;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.Rule;
+import org.junit.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.junit.MockitoJUnit;
+import org.mockito.junit.MockitoRule;
+
+import com.mindtree.dao.IZoneDao;
+import com.mindtree.entity.ZoneTypeEntity;
+import com.mindtree.exception.TaxException;
+import com.mindtree.service.IZoneService;
+import com.mindtree.service.impl.ZoneServiceImpl;
+
+/**
+ * The Class ZoneTest.
+ */
+public class ZoneTest {
+
+	/** The mockito rule. */
+	@Rule
+	public MockitoRule mockitoRule = MockitoJUnit.rule();
+
+	/** The zone service. */
+	@Mock
+	IZoneService zoneService;
+
+	/** The zone dao. */
+	@Mock
+	IZoneDao zoneDao;
+
+	/** The zone service impl. */
+	@InjectMocks
+	ZoneServiceImpl zoneServiceImpl;
+
+	/**
+	 * Gets the zones.
+	 *
+	 * @return the zones
+	 * @throws TaxException the tax exception
+	 */
+	@Test
+	public void getZones() throws TaxException {
+		List<ZoneTypeEntity> zoneList = zoneServiceImpl.getAllZoneType();
+		assertNotNull(zoneList);
+	}
+
+	/**
+	 * Gets the zone.
+	 *
+	 * @return the zone
+	 * @throws TaxException the tax exception
+	 */
+	@Test
+	public void getZone() throws TaxException {
+		ZoneTypeEntity zoneTypeEntity = new ZoneTypeEntity();
+		zoneTypeEntity.setZoneId(1);
+		zoneTypeEntity.setZoneType("Zone A");
+		Mockito.when(zoneServiceImpl.getZoneType(Mockito.anyString())).thenReturn(zoneTypeEntity);
+		ZoneTypeEntity zoneList = zoneServiceImpl.getZoneType("Zone A");
+		assertEquals(zoneList.getZoneType(), "Zone A");
+	}
+	
+	@Test
+	public void save() throws TaxException{
+		ZoneTypeEntity zoneTypeEntity = new ZoneTypeEntity();
+		zoneTypeEntity.setZoneId(1);
+		zoneTypeEntity.setZoneType("Zone A");
+		zoneServiceImpl.saveZoneDetails(zoneTypeEntity);
+	}
+
+}

@@ -1,0 +1,8 @@
+package com.mindtree.dao;
+
+/**
+ * The Interface IPropertyDao.
+ */
+public interface IPropertyDao {
+
+}

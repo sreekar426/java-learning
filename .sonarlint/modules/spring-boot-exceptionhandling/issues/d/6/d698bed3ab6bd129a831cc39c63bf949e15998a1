@@ -1,0 +1,3 @@
+
+Ô%squid:RedundantThrowsDeclarationCheck	"‡Remove the declaration of thrown exception 'com.javainuse.service.EmployeeServiceException', as it cannot be thrown from method's body.(‰Üô‹üÿÿÿÿH¥QRMINORZ
+CODE_SMELL

@@ -1,0 +1,17 @@
+package com.mindtree.dao.impl;
+
+import com.mindtree.dao.IDescriptionDao;
+import com.mindtree.entity.DescriptionEntity;
+
+/**
+ * The Class DescriptionDaoImpl.
+ */
+public class DescriptionDaoImpl implements IDescriptionDao {
+
+	@Override
+	public DescriptionEntity getDescType(String descType, int zoneId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

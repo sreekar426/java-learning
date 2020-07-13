@@ -1,0 +1,58 @@
+package com.mindtree.entity;
+
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
+import org.springframework.lang.Nullable;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
+/**
+ * The Class PropertyEntity.
+ */
+
+@Entity
+@Data
+@EqualsAndHashCode
+@Table(name = "property")
+public class PropertyEntity implements Serializable {
+
+	/** The Constant serialVersionUID. */
+	private static final long serialVersionUID = 1L;
+
+	/** The property id. */
+	@Id
+	@NotNull
+	@Column(name = "property_id")
+	private int propertyId;
+
+	/** The status. */
+	@NotNull
+	@Size(min=1,max=100)
+	@Column(name = "status")
+	private String status;
+
+	/** The uav. */
+	@NotNull
+	@Size(min=1,max=100)
+	@Column(name = "uav")
+	private double uav;
+
+	/** The zone. */
+	@ManyToOne
+	@JoinColumn(name = "desc_id", insertable = false, updatable = false)
+	@JsonIgnore
+	private DescriptionEntity description;
+
+}

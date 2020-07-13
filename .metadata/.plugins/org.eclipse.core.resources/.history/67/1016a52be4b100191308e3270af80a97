@@ -1,0 +1,208 @@
+package com.mindtree.java.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.mindtree.dto.AjaxDto;
+import com.mindtree.entity.DescriptionEntity;
+import com.mindtree.entity.PropertyEntity;
+import com.mindtree.entity.ZoneTypeEntity;
+import com.mindtree.exception.TaxException;
+import com.mindtree.service.IDescriptionService;
+import com.mindtree.service.IPropertyService;
+import com.mindtree.service.IZoneService;
+import com.mindtree.utill.TaxCalculationUtill;
+
+@Controller
+public class TaxMangmentController {
+
+	/** The logger. */
+	Logger logger = LogManager.getLogger(TaxMangmentController.class);
+
+	/** The Constant OWNER. */
+	public static final String OWNER = "Owner";
+
+	/** The Constant SUCCESS. */
+	public static final String SUCCESS = "Your Tax details are saved successfully";
+
+	/** The Constant ADD_TAX. */
+	public static final String ADD_TAX = "addTax";
+
+	/** The Constant VIEW_TAX. */
+	public static final String VIEW_TAX = "viewTax";
+
+	/** The zone service. */
+	@Autowired
+	private IZoneService zoneService;
+
+	/** The description service. */
+	@Autowired
+	private IDescriptionService descriptionService;
+
+	/** The property service. */
+	@Autowired
+	private IPropertyService propertyService;
+
+	/**
+	 * Adds the tax.
+	 *
+	 * @param map the map
+	 * @return the string
+	 */
+	@GetMapping("/addTax")
+	public String addTax(ModelMap map) {
+		return ADD_TAX;
+	}
+
+	/**
+	 * View tax.
+	 *
+	 * @param map the map
+	 * @return the string
+	 */
+	@GetMapping("/viewTax")
+	public String viewTax(ModelMap map) {
+		return VIEW_TAX;
+	}
+
+	/**
+	 * View records.
+	 *
+	 * @return the list
+	 * @throws TaxException
+	 */
+	@GetMapping("/zoneValue")
+	@ResponseBody
+	public List<ZoneTypeEntity> viewRecords() throws TaxException {
+
+		logger.info("Featching zone types......");
+
+		return zoneService.getAllZoneType();
+
+	}
+
+	/**
+	 * Gets the all zone.
+	 *
+	 * @return the all zone
+	 * @throws TaxException
+	 */
+	@GetMapping("/tax")
+	@ResponseBody
+	public List<String> getAllZone() throws TaxException {
+		List<String> zonesList = new ArrayList<>();
+
+		List<ZoneTypeEntity> listOfZone = null;
+
+		try {
+			logger.info("Featching all zone types......");
+			listOfZone = zoneService.getAllZoneType();
+		} catch (Exception exception) {
+			logger.error(exception.getMessage());
+		}
+
+		if (null != listOfZone && !listOfZone.isEmpty()) {
+			listOfZone.forEach(o -> {
+				zonesList.add(o.getZoneType());
+			});
+
+		}
+		return zonesList;
+
+	}
+
+	/**
+	 * Gets the description by id.
+	 *
+	 * @param zoneId the zone id
+	 * @return the description by id
+	 * @throws TaxException
+	 */
+	@GetMapping("/tax/{zoneId}")
+	@ResponseBody
+	public List<String> getDescriptionById(@PathVariable String zoneId) throws TaxException {
+
+		List<String> descriptionDetails = new ArrayList<>();
+
+		ZoneTypeEntity zoneDetails = null;
+
+		try {
+			logger.info("Featching zone types by id......");
+			zoneDetails = zoneService.getZoneType(zoneId);
+		} catch (Exception exception) {
+			logger.error(exception.getMessage());
+		}
+
+		if (null != zoneDetails && !zoneDetails.getDescription().isEmpty()) {
+			zoneDetails.getDescription().forEach(o -> {
+
+				descriptionDetails.add(o.getDescType());
+			});
+		}
+		return descriptionDetails;
+
+	}
+
+	/**
+	 * Tax calculation.
+	 *
+	 * @param ajaxDto the ajax dto
+	 * @return the double
+	 */
+	@PostMapping("/cal")
+	@ResponseBody
+	public double taxCalculation(@RequestBody AjaxDto ajaxDto) {
+
+		PropertyEntity property = null;
+
+		try {
+			logger.info("Featching zone types......");
+			ZoneTypeEntity zoneType = zoneService.getZoneType(ajaxDto.getZoneId());
+			DescriptionEntity descType = descriptionService.getDescType(ajaxDto.getPropertyId(), zoneType.getZoneId());
+
+			property = propertyService.getPropertyDetails(descType.getDescId(), ajaxDto.getStatus());
+
+		} catch (TaxException exception) {
+
+			logger.error(exception.getMessage());
+
+		}
+		return TaxCalculationUtill.taxCalculation(ajaxDto.getAreaId(), property.getUav(), ajaxDto.getYearId());
+
+	}
+
+	@PostMapping("/pay")
+	@ResponseBody
+	public String pay(@RequestBody AjaxDto ajaxDto) throws TaxException {
+
+		ZoneTypeEntity zoneId = zoneService.getZoneType(ajaxDto.getZoneId());
+
+		try {
+			if (OWNER.equalsIgnoreCase(ajaxDto.getStatus())) {
+
+				zoneId.setOwnerAmount(zoneId.getOwnerAmount() + Math.round(ajaxDto.getTotalId() * 100.0) / 100.0);
+				zoneService.saveZoneDetails(zoneId);
+
+			} else {
+				zoneId.setTenantAmount(zoneId.getTenantAmount() + Math.round(ajaxDto.getTotalId() * 100.0) / 100.0);
+				zoneService.saveZoneDetails(zoneId);
+			}
+		} catch (TaxException exception) {
+			logger.error(exception.getMessage());
+		}
+
+		return SUCCESS;
+
+	}
+}

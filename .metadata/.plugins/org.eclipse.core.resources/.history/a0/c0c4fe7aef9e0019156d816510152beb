@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+</head>
+<body>
+	<div>
+		<h2>Assign Tasks</h2>
+		<table>
+			<tr>
+				<td><label>Project</label></td>
+				<td style="padding-left: 30px"><select id="projectData" onchange="showCustomer(this.value)">
+						<option value="value">--select--</option>
+				</select></td>
+			</tr>
+		</table>
+		
+		<table id="location" border='1'>
+        <tr>
+        <th>Countries</th>
+        <th>Cities</th>
+        </tr>
+        </table>
+		
+		
+	</div>
+</body>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	
+	$.ajax({
+        url: "/view",
+        datatype: "JSON",
+        type: "Get",
+        success: function (data) {
+            $.each(data, function (index, value) {
+            	 $('#projectData').append('<option value="' + value.projectName + '">' + value.projectName + '</option>');
+            });
+        }
+    });
+	});
+	
+	
+function showCustomer(str) {
+	 alert(str);
+	}
+	
+	
+	
+
+
+</script>
+</html>

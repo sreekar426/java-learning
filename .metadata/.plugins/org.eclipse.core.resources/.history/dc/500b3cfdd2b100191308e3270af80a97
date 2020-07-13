@@ -1,0 +1,19 @@
+package com.mindtree.dao;
+
+import com.mindtree.entity.PropertyEntity;
+
+/**
+ * The Interface IPropertyDao.
+ */
+public interface IPropertyDao {
+
+	/**
+	 * Gets the property details.
+	 *
+	 * @param descId the desc id
+	 * @param status the status
+	 * @return the property details
+	 */
+	public PropertyEntity getPropertyDetails(int descId, String status);
+
+}

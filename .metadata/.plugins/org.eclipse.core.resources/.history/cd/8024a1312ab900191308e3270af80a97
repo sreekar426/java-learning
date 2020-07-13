@@ -1,0 +1,14 @@
+package com.sreekar.compare;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+	
+		Mobile mobile=new Mobile();
+		
+		
+		
+
+	}
+
+}

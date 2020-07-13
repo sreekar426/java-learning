@@ -1,0 +1,20 @@
+package com.mindtree.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.mindtree.entity.ZoneTypeEntity;
+import com.mindtree.repository.ZoneRepository;
+import com.mindtree.service.IZoneService;
+
+public class ZoneService implements IZoneService {
+	
+	@Autowired
+	ZoneRepository zoneRepository;
+
+	@Override
+	public ZoneTypeEntity getAllZoneType() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

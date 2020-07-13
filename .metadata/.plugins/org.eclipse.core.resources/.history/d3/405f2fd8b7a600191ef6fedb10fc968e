@@ -1,0 +1,15 @@
+package com.mindtree.dto;
+
+import lombok.Data;
+
+@Data
+public class AjaxDto {
+
+	private String zoneId;
+	private String propertyId;
+	private String status;
+	private String yearId;
+	private double areaId;
+	private double totalId;
+
+}

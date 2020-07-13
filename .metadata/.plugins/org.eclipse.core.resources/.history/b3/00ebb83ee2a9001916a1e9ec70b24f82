@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<style>
+.text {
+	margin-left: 7px;
+	margin-top: -15px;
+}
+
+.radioButton {
+	margin-top: -10px;
+}
+
+.temp {
+	border: 1px solid red;
+	padding-bottom: 3px;
+}
+</style>
+
+
+
+</head>
+<body>
+
+	<div class="temp" id="radioId">
+		<div class="text">
+			<p>my concent Text</p>
+		</div>
+		<div class="radioButton">
+			<input type="radio" name="gender" value="Yes"
+				onchange="changeColour(this)"> Yes <input type="radio"
+				name="gender" value="No" onchange="changeColour(this)"> No
+		</div>
+	</div>
+
+
+</body>
+<script type="text/javascript">
+	function changeColour(element) {
+		var div = document.getElementById('radioId');
+		div.style = 'border: 1px solid green';
+
+	}
+</script>
+</html>

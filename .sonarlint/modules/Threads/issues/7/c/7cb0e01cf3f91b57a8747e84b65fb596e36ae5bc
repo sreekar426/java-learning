@@ -1,0 +1,26 @@
+
+l
+squid:S106"9Replace this use of System.out or System.err by a logger.(ñ­§£8½‚ËÏì-H¸zRMAJORZ
+CODE_SMELL
+asquid:S2440"-Remove this instantiation of "FlatEarthDist".(­Êì 8ÁùÚ¯ì-H¹zRMAJORZ
+CODE_SMELL
+squid:CommentedOutCodeLine""<This block of commented-out lines of code should be removed.(˜»žû8ÁùÚ¯ì-HºzRMAJORZ
+CODE_SMELL
+l
+squid:S106"9Replace this use of System.out or System.err by a logger.(«î¸Ý8¶°ŽÍí-H»zRMAJORZ
+CODE_SMELL
+ssquid:UnusedPrivateMethod"1Remove this unused private "decimalToDMS" method.(÷æÈâ8ÆŸÏÏì-H¼zRMAJORZ
+CODE_SMELL
+nsquid:S2209"5Change this instance-reference to a static reference.(Ñ­‘²þÿÿÿÿ8ÁùÚ¯ì-H½zRMAJORZ
+CODE_SMELL
+osquid:S1118¥":Add a private constructor to hide the implicit public one.(ÑÛ‰×8ÁùÚ¯ì-H¾zRMAJORZ
+CODE_SMELL
+„squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ñ…–üüÿÿÿÿ8¶°ŽÍí-H¿zRMAJORZ
+CODE_SMELL
+lsquid:UselessParenthesesCheck"!Remove these useless parentheses.(éÁ‰¤úÿÿÿÿ8ÁùÚ¯ì-HÀzRMAJORZ
+CODE_SMELL
+squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(±ú‚×8ÆŸÏÏì-HÁzRMAJORZ
+CODE_SMELL
+q
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ü³¶¬ýÿÿÿÿ8žšÊÏì-HÂzRMAJORZ
+CODE_SMELL

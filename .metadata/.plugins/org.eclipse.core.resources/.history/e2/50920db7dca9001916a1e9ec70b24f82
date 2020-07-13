@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<form action="">
+		<input type="radio" name="gender" value="Yes"> Yes<br>
+		<input type="radio" name="gender" value="No"> No<br>
+	</form>
+
+
+</body>
+</html>

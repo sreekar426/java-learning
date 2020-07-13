@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<html lang="en">
+<body>
+    <div>
+        <div>
+            Click for <a href="#" onclick="function1()"> CreateTask</a>
+            Click for <a href="#" onclick="function()"> ViewTask</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+package com.mindtree.entity;
+
+import java.io.Serializable;
+import java.util.List;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
+import org.springframework.lang.Nullable;
+
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
+/**
+ * The Class ZoneEntity.
+ */
+@Entity
+@Data
+@EqualsAndHashCode
+@Table(name="zone")
+public class ZoneTypeEntity implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+
+	/** The zone id. */
+	@Id
+	@NotNull
+	@Column(name = "zone_id")
+	private int zoneId;
+
+	/** The zone type. */
+	@NotNull
+	@Size(min=1,max=100)
+	@Column(name = "zone_type")
+	private String zoneType;
+	
+	@Nullable
+	@Min(0)
+	@Max(90)
+	@Column(name = "owner_amount")
+	private double ownerAmount;
+	
+	@Nullable
+	@Min(0)
+	@Max(90)
+	@Column(name = "tenant_amount")
+	private double tenantAmount;
+	
+	@OneToMany(mappedBy="zone")
+	private List<DescriptionEntity> description;
+
+
+}

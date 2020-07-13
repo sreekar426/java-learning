@@ -1,0 +1,40 @@
+.a {
+	line-height: 1em;
+	display: inline-block;
+	text-decoration: none;
+	padding: 30px;
+	margin: 5px;
+	text-decoration: underline;
+}
+
+.h3 {
+	text-align: left;
+	padding-left: 160px;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 5px;
+	text-align: left;
+}
+
+div.a {
+	font-weight: bold;
+	padding: 5px;
+	text-align: center;
+}
+
+.temp {
+	text-align: right;
+}
+
+div.d {
+	padding-left: 10px;
+	padding-top: 5px;
+	text-align: left;
+	padding-top: 5px;
+}

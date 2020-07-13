@@ -1,0 +1,7 @@
+driver=org.postgresql.Driver
+url=jdbc:mysql://localhost:7000/userservice?useSSL=false
+user=postgres
+password=postgres
+
+hibernate.dialect=org.hibernate.dialect.PostgreSQL82Dialect
+hibernate.show_sql=true

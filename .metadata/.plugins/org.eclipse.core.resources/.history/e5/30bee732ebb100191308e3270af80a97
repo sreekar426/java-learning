@@ -1,0 +1,21 @@
+#Derby
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=update
+spring.datasource.url=jdbc:derby:DB;create=true
+spring.datasource.username=admin
+spring.datasource.password=password
+spring.datasource.driver-class-name=org.apache.derby.jdbc.EmbeddedDriver
+spring.jpa.properties.hibernate.dialect =org.hibernate.dialect.DerbyDialect
+
+#Logger
+logging.level.org.springframework=DEBUG
+logging.level.com.howtodoinjava=DEBUG
+ 
+#output to a temp_folder/file
+logging.file=D:\Sreekar_M1048290_Spring and Hibernate 201_16.7.19/application.log
+ 
+# Logging pattern for the console
+logging.pattern.console= %d{yyyy-MM-dd HH:mm:ss} - %msg%n
+ 
+# Logging pattern for file
+logging.pattern.file= %d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%

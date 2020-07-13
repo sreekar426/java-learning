@@ -1,0 +1,22 @@
+package com.sreekar.spring;
+
+import java.io.File;
+
+public class FileReaderExample {
+	public static void main(String args[]) throws Exception {
+		double number = 2000000;
+
+		System.out.println(number / 1024);
+
+		File file = new File(
+				"D:\\mosip\\registration-1\\registration\\registration-client\\logs\\registration-2020-02-25-15-0.log");
+
+		if (file.exists()) {
+
+			double bytes = file.length();
+
+			System.out.println("megabytes : " + bytes / (1024 * 1024));
+
+		}
+	}
+}

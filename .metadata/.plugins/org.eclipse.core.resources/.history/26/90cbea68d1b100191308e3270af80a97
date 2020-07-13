@@ -1,0 +1,14 @@
+package com.mindtree.dao.impl;
+
+import com.mindtree.dao.IPropertyDao;
+import com.mindtree.entity.PropertyEntity;
+
+public class PropertyDaoImpl implements IPropertyDao{
+
+	@Override
+	public PropertyEntity getPropertyDetails(int descId, String status) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,26 @@
+
+`squid:S14810",Remove this unused "subList" local variable.(Ü‹8ß€˜‚ø-H›SRMINORZ
+CODE_SMELL
+squid:S2293 "YReplace the type specification in this constructor call with the diamond operator ("<>").(¡Â8Õ·—‚ø-H•SRMINORZ
+CODE_SMELL
+ssquid:S18543":Remove this useless assignment to local variable "result".(ÇÔ³Ñøÿÿÿÿ8Õ·—‚ø-H˜SRMAJORZ
+CODE_SMELL
+osquid:S18540";Remove this useless assignment to local variable "subList".(Ü‹8ß€˜‚ø-HœSRMAJORZ
+CODE_SMELL
+tsquid:UselessImportCheck".Remove this unused import 'java.util.TreeMap'.(¨éˆèıÿÿÿÿ8„¢×ÿ÷-HùRRMINORZ
+CODE_SMELL
+tsquid:UselessImportCheck".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8„¢×ÿ÷-HúRRMINORZ
+CODE_SMELL
+dsquid:S14813"+Remove this unused "result" local variable.(ÇÔ³Ñøÿÿÿÿ8Õ·—‚ø-H—SRMINORZ
+CODE_SMELL
+asquid:S1604""(Make this anonymous inner class a lambda(Ì­÷¨úÿÿÿÿ8áØ•›ø-HÃSRMAJORZ
+CODE_SMELL
+q
+squid:S106-"9Replace this use of System.out or System.err by a logger.(ÖˆşÀıÿÿÿÿ8–»œ›ø-HÛSRMAJORZ
+CODE_SMELL
+„squid:CommentedOutCodeLine5"<This block of commented-out lines of code should be removed.(ğşø‰üÿÿÿÿ8Õ·—‚ø-H–SRMAJORZ
+CODE_SMELL
+psquid:UselessImportCheck"/Remove this unused import 'java.util.Iterator'.(¥ÍòÕ8®˜›ø-HÉSRMINORZ
+CODE_SMELL
+„squid:CommentedOutCodeLine1"<This block of commented-out lines of code should be removed.(ñù°ªşÿÿÿÿ8ß€˜‚ø-HšSRMAJORZ
+CODE_SMELL

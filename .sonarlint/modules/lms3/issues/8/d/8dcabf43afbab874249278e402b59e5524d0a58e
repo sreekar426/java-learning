@@ -1,0 +1,13 @@
+
+}squid:CommentedOutCodeLineM"<This block of commented-out lines of code should be removed.(æÂœçþÿÿÿÿHöRMAJORZ
+CODE_SMELL
+squid:S14887"]Immediately return this expression instead of assigning it to the temporary variable "books".(±™Â°øÿÿÿÿH÷RMINORZ
+CODE_SMELL
+squid:S1488I"]Immediately return this expression instead of assigning it to the temporary variable "books".(±™Â°øÿÿÿÿHøRMINORZ
+CODE_SMELL
+”squid:S1488X"bImmediately return this expression instead of assigning it to the temporary variable "categories".(Úå±üÿÿÿÿHùRMINORZ
+CODE_SMELL
+]squid:S1481G"0Remove this unused "createdBook" local variable.(‚€ÆƒHúRMINORZ
+CODE_SMELL
+lsquid:S1854G"?Remove this useless assignment to local variable "createdBook".(‚€ÆƒHûRMAJORZ
+CODE_SMELL

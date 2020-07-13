@@ -1,0 +1,9 @@
+
+ƒsquid:UselessImportCheck"BRemove this unused import 'javax.servlet.http.HttpServletRequest'.(ø©¹…8ò©¸Äñ-HæPRMINORZ
+CODE_SMELL
+squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ïŸßè8‰®ºÄñ-HùPRMAJORZ
+CODE_SMELL
+msquid:UselessImportCheck"'Remove this unused import 'lombok.val'.(ÙÅ¶ÿÿÿÿÿ8†ÑšÄñ-HÓPRMINORZ
+CODE_SMELL
+Šsquid:UselessImportCheck"DRemove this unused import 'org.springframework.http.ResponseEntity'.(¶¯ø¦úÿÿÿÿ8‰®ºÄñ-HúPRMINORZ
+CODE_SMELL

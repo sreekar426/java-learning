@@ -1,0 +1,11 @@
+package com.mindtree.utill;
+
+public class Calculation {
+
+	
+	public String taxCalculation() {
+		
+	}
+	
+	
+}

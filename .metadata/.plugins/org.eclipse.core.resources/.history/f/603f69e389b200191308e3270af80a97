@@ -1,0 +1,12 @@
+package com.mindtree.java;
+
+import org.mockito.Mock;
+
+import com.mindtree.dao.IDescriptionDao;
+
+public class DescriptionTest {
+	
+	@Mock
+	IDescriptionDao descriptionDao;
+
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="js/main.js" type="text/javascript"></script>
+
+<style>
+div.d {
+	padding-left: 2px;
+	text-align: left;
+	padding-bottom: 50px;
+}
+
+.ex1 {
+	height: 40px;
+	width: 200px;
+	overflow-y: scroll;
+}
+
+.button {
+	background-color: blue;
+	border: none;
+	color: white;
+	padding: 2px 12px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.c{
+
+margin:25px;
+border: medium;
+
+}
+</style>
+
+</head>
+
+<body>
+	<div class="d">
+		<a href="/" onmouseover="this.style.color='blue';"
+			onmouseout="this.style.color='black';">Home</a><br>
+	</div>
+	
+	
+	<div class="c">
+	
+	<div>
+	<h2>Self Assessment of property Tax Form</h2>
+	</div>
+
+	<div>
+		<form id="pay">
+			<table>
+				<tbody>
+					<tr>
+						<td>Year of Assessment</td>
+						<td><input name="yearOfAssessment" type="text"
+							id="assessmentYearId" onblur="yearValidation(this.value,event)">
+							<br></td>
+					</tr>
+					<tr>
+						<td>Name Of the Owner</td>
+						<td><input name="owner" type="text"> <br></td>
+					</tr>
+					<tr>
+						<td>Email</td>
+						<td><input name="email" type="text"> <br></td>
+					</tr>
+					<tr>
+						<td>Address of Property</td>
+						<td><textarea name="address" class="ex1"></textarea> <br></td>
+					</tr>
+					<tr>
+						<td>Zonal classification</td>
+						<td><select id="zoneId" onchange="getDescription()">
+								<option value="select">--select--</option>
+						</select><br></td>
+					</tr>
+					<tr>
+						<td>Description of the property</td>
+						<td><select id="propertyTypeId" onchange="cleanSelected()">
+								<option value="value">--select--</option>
+						</select> <br></td>
+					</tr>
+					<tr>
+						<td>status</td>
+						<td><select id="status" onchange="cleanSelected()">
+								<option value="Owner">Owner</option>
+								<option value="Tenanted">Tenant</option>
+						</select> <br></td>
+					</tr>
+					<tr>
+						<td>Building constructed year</td>
+						<td><input id="yearId" type="text" onchange="cleanSelected()"
+							onblur="yearValidate(this.value,event)"> <br></td>
+					</tr>
+					<tr>
+						<td>Build Up Area (Square feet)</td>
+						<td><input id="areaId" type="text" onchange="cleanSelected()"
+							oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+							<br></td>
+					</tr>
+					<tr>
+						<td>Total payable tax</td>
+						<td><input name="area" type="text" readonly="readonly"
+							id="totalId" onfocusin="propertyCalculation(this)"> <br></td>
+					</tr>
+
+					<tr>
+						<td><input class="button" onclick="clean()" type="reset"
+							value="Cancel"></td>
+						<td><input class="button" type="submit" value="PayTax"
+							disabled="disabled" id="bttnsubmit"></td>
+					</tr>
+
+
+				</tbody>
+			</table>
+		</form>
+	</div>
+	</div>
+	<script type="text/javascript">
+		$('form#pay').submit(function(e) {
+			e.preventDefault();
+			var pay = {};
+			pay["zoneId"] = $("#zoneId").val();
+			pay["propertyId"] = $("#propertyTypeId").val();
+			pay["status"] = $("#status").val();
+			pay["yearId"] = $("#yearId").val();
+			pay["areaId"] = $("#areaId").val();
+			pay["totalId"] = $("#totalId").val();
+
+			$.ajax({
+				url : "/pay",
+				datatype : "JSON",
+				type : "POST",
+				cache : false,
+				data : JSON.stringify(pay),
+				contentType : "application/json; charset=utf-8",
+				success : function(feedback) {
+					alert(feedback);
+					window.location.href = "http://localhost:8080/";
+				},
+				error: function(error){
+					alert("Your request can't be processed now , Please try later !");
+				}
+			});
+		});
+	</script>
+</body>

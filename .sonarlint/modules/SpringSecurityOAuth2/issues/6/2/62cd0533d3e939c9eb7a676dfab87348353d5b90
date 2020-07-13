@@ -1,0 +1,30 @@
+
+{squid:S1192."KDefine a constant instead of duplicating this literal " not found" 3 times.(Ö¬Ø®HºRCRITICALZ
+CODE_SMELL
+j
+squid:S106+"9Replace this use of System.out or System.err by a logger.(µ¸á°ıÿÿÿÿH»RMAJORZ
+CODE_SMELL
+e
+squid:S106."9Replace this use of System.out or System.err by a logger.(Ö¬Ø®H¼RMAJORZ
+CODE_SMELL
+e
+squid:S106:"9Replace this use of System.out or System.err by a logger.(Ø¹öùH½RMAJORZ
+CODE_SMELL
+j
+squid:S106="9Replace this use of System.out or System.err by a logger.(¦ÅÆ©şÿÿÿÿH¾RMAJORZ
+CODE_SMELL
+e
+squid:S106M"9Replace this use of System.out or System.err by a logger.(¡¼¹€H¿RMAJORZ
+CODE_SMELL
+e
+squid:S106R"9Replace this use of System.out or System.err by a logger.(Ö¬Ø®HÀRMAJORZ
+CODE_SMELL
+j
+squid:S106b"9Replace this use of System.out or System.err by a logger.(‹Ä˜íùÿÿÿÿHÁRMAJORZ
+CODE_SMELL
+e
+squid:S106f"9Replace this use of System.out or System.err by a logger.(ğ‰í°HÂRMAJORZ
+CODE_SMELL
+j
+squid:S106s"9Replace this use of System.out or System.err by a logger.(İÖÊûÿÿÿÿHÃRMAJORZ
+CODE_SMELL

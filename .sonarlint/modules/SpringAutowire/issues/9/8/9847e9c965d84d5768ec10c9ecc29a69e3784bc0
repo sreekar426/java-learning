@@ -1,0 +1,18 @@
+
+q
+squid:S106"9Replace this use of System.out or System.err by a logger.(‘Ìžâýÿÿÿÿ8ÃÀ‚ßñ-H±QRMAJORZ
+CODE_SMELL
+squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(‰†ã»8ÃÀ‚ßñ-H°QRMAJORZ
+CODE_SMELL
+Zsquid:S1172"&Remove these unused method parameters.(ëüïž8Š£ƒßñ-H²QRMAJORZ
+CODE_SMELL
+Á%squid:RedundantThrowsDeclarationCheck'"sRemove the declaration of thrown exception 'org.springframework.beans.BeansException' which is a runtime exception.(¾ýˆ„8¤’£›ø-HÿSRMINORZ
+CODE_SMELL
+Á%squid:RedundantThrowsDeclarationCheck-"sRemove the declaration of thrown exception 'org.springframework.beans.BeansException' which is a runtime exception.(ˆ’€·8¤’£›ø-H€TRMINORZ
+CODE_SMELL
+jsquid:S1135("2Complete the task associated to this TODO comment.(» æžÿÿÿÿÿ8¤’£›ø-HTRINFOZ
+CODE_SMELL
+jsquid:S1135."2Complete the task associated to this TODO comment.(» æžÿÿÿÿÿ8¤’£›ø-H‚TRINFOZ
+CODE_SMELL
+squid:UselessImportCheck"ORemove this unused import 'org.springframework.beans.factory.InitializingBean'.(åÑ¦œ8¤’£›ø-HƒTRMINORZ
+CODE_SMELL

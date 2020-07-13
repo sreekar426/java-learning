@@ -1,0 +1,26 @@
+package com.mindtree.dao.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.mindtree.dao.IPropertyDao;
+import com.mindtree.entity.PropertyEntity;
+import com.mindtree.repository.PropertyRepository;
+
+/**
+ * The Class PropertyDaoImpl.
+ */
+public class PropertyDaoImpl implements IPropertyDao {
+
+	/** The property repository. */
+	@Autowired
+	private PropertyRepository propertyRepository;
+
+	/* (non-Javadoc)
+	 * @see com.mindtree.dao.IPropertyDao#getPropertyDetails(int, java.lang.String)
+	 */
+	@Override
+	public PropertyEntity getPropertyDetails(int descId, String status) {
+		return propertyRepository.findByDescriptionDescIdAndStatus(descId, status);
+	}
+
+}

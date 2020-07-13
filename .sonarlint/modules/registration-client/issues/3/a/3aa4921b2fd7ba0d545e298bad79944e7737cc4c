@@ -1,0 +1,41 @@
+
+Ñsquid:S3776‚"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ò¡‹£H∂ñRCRITICALZ
+CODE_SMELL
+âsquid:S3776¿"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(ÑﬂÃï˘ˇˇˇˇH∑ñRCRITICALZ
+CODE_SMELL
+Ésquid:S3776ì"RRefactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.(¨óñnH∏ñRCRITICALZ
+CODE_SMELL
+qsquid:S00107ù"<Method has 8 parameters, which is greater than 7 authorized.(æç√°˘ˇˇˇˇHπñRMAJORZ
+CODE_SMELL
+ásquid:S1602¯"SRemove useless curly braces around statement and then remove useless return keyword(Î”Ä”˘ˇˇˇˇH∫ñRMINORZ
+CODE_SMELL
+ásquid:S1602â"SRemove useless curly braces around statement and then remove useless return keyword(Î”Ä”˘ˇˇˇˇHªñRMINORZ
+CODE_SMELL
+ásquid:S1602å"SRemove useless curly braces around statement and then remove useless return keyword(Î”Ä”˘ˇˇˇˇHºñRMINORZ
+CODE_SMELL
+Çsquid:S1602è"SRemove useless curly braces around statement and then remove useless return keyword(∞≈óŸHΩñRMINORZ
+CODE_SMELL
+ásquid:S1602®"SRemove useless curly braces around statement and then remove useless return keyword(ıŒº∏˛ˇˇˇˇHæñRMINORZ
+CODE_SMELL
+ásquid:S1602Â"SRemove useless curly braces around statement and then remove useless return keyword(Î”Ä”˘ˇˇˇˇHøñRMINORZ
+CODE_SMELL
+ásquid:S1602ˆ"SRemove useless curly braces around statement and then remove useless return keyword(Î”Ä”˘ˇˇˇˇH¿ñRMINORZ
+CODE_SMELL
+`squid:S1612®",Replace this lambda with a method reference.(ıŒº∏˛ˇˇˇˇH¡ñRMINORZ
+CODE_SMELL
+csquid:S1611¯"/Remove the parentheses around the "s" parameter(Î”Ä”˘ˇˇˇˇH¬ñRMINORZ
+CODE_SMELL
+csquid:S1611â"/Remove the parentheses around the "s" parameter(Î”Ä”˘ˇˇˇˇH√ñRMINORZ
+CODE_SMELL
+csquid:S1611å"/Remove the parentheses around the "s" parameter(Î”Ä”˘ˇˇˇˇHƒñRMINORZ
+CODE_SMELL
+^squid:S1611è"/Remove the parentheses around the "s" parameter(∞≈óŸH≈ñRMINORZ
+CODE_SMELL
+csquid:S1611Â"/Remove the parentheses around the "s" parameter(Î”Ä”˘ˇˇˇˇH∆ñRMINORZ
+CODE_SMELL
+csquid:S1611ˆ"/Remove the parentheses around the "s" parameter(Î”Ä”˘ˇˇˇˇH«ñRMINORZ
+CODE_SMELL
+tsquid:UselessImportCheck"4Remove this unused import 'java.util.regex.Pattern'.(√ïÖƒ˙ˇˇˇˇH»ñRMINORZ
+CODE_SMELL
+nsquid:S1161Á":Add the "@Override" annotation above this method signature(„œßÖ˙ˇˇˇˇH…ñRMAJORZ
+CODE_SMELL

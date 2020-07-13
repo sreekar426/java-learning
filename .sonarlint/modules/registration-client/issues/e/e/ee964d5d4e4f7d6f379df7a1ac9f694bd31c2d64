@@ -1,0 +1,48 @@
+
+„squid:S3776é"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(°ÛğœH÷®RCRITICALZ
+CODE_SMELL
+rsquid:S1155™">Use isEmpty() to check whether the collection is empty or not.(Óµ“÷ûÿÿÿÿHø®RMINORZ
+CODE_SMELL
+Xsquid:S1125¥	")Remove the literal "false" boolean value.(à¾ÛûHù®RMINORZ
+CODE_SMELL
+Šsquid:S1192„"SDefine a constant instead of duplicating this literal "selectedResidence" 10 times.(’àÙ”ùÿÿÿÿHú®RCRITICALZ
+CODE_SMELL
+ysquid:S1192€"HDefine a constant instead of duplicating this literal "button" 22 times.(ƒè‰AHû®RCRITICALZ
+CODE_SMELL
+Èsquid:S1192ò"•Define a constant instead of duplicating this literal "REGISTRATION - INDIVIDUAL_REGISTRATION - RETRIEVE_AND_POPULATE_LOCATION_BY_HIERARCHY" 3 times.(È’ïHü®RCRITICALZ
+CODE_SMELL
+hsquid:S1905ê"9Remove this unnecessary cast to "CBEFFFilePropertiesDTO".(Ğ„ÔHı®RMINORZ
+CODE_SMELL
+„squid:S3776¥"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(çéÿëHş®RCRITICALZ
+CODE_SMELL
+ysquid:UselessImportCheck"9Remove this unused import 'org.assertj.core.util.Arrays'.(ù·„¾úÿÿÿÿHÿ®RMINORZ
+CODE_SMELL
+vsquid:HiddenFieldCheck°"<Rename "isChild" which hides the field declared at line 471.(Õ˜‹H€¯RMAJORZ
+CODE_SMELL
+º%squid:RedundantThrowsDeclarationCheck¥"qRemove the declaration of thrown exception 'java.text.ParseException', as it cannot be thrown from method's body.(çéÿëH¯RMINORZ
+CODE_SMELL
+‰squid:S3776ç"RRefactor this method to reduce its Cognitive Complexity from 47 to the 15 allowed.(‡ƒÉåüÿÿÿÿH‚¯RCRITICALZ
+CODE_SMELL
+ñ%squid:RedundantThrowsDeclarationCheck¥"§Remove the declaration of thrown exception 'io.mosip.kernel.core.applicanttype.exception.InvalidApplicantArgumentException', as it cannot be thrown from method's body.(çéÿëHƒ¯RMINORZ
+CODE_SMELL
+dsquid:S3655‘"7Call "Optional#isPresent()" before accessing the value.(Ëóİ€úÿÿÿÿH„¯RMAJORZBUG
+dsquid:S3655”"7Call "Optional#isPresent()" before accessing the value.(­šÂ¸üÿÿÿÿH…¯RMAJORZBUG
+‰squid:S3776œ"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(úùúüÿÿÿÿH†¯RCRITICALZ
+CODE_SMELL
+hsquid:S2696Ì"6Make the enclosing method "static" or remove this set.(ã‡™H‡¯RCRITICALZ
+CODE_SMELL
+Wsquid:S1125ÿ"(Remove the literal "true" boolean value.(²ƒ˜ŸHˆ¯RMINORZ
+CODE_SMELL
+|squid:HiddenFieldCheckË	"BRename "ageFieldLabel" which hides the field declared at line 432.(Ã©«»H‰¯RMAJORZ
+CODE_SMELL
+}squid:UselessImportCheckB"BRemove this unused import 'io.mosip.registration.entity.Location'.(İöÛùHŠ¯RMINORZ
+CODE_SMELL
+|squid:S1192€"KDefine a constant instead of duplicating this literal "residence" 13 times.(ƒè‰AH‹¯RCRITICALZ
+CODE_SMELL
+_squid:S3655œ"7Call "Optional#isPresent()" before accessing the value.(Ï³õ”HŒ¯RMAJORZBUG
+_squid:S3655–"7Call "Optional#isPresent()" before accessing the value.(ÅÊ…°H¯RMAJORZBUG
+dsquid:S3655™"7Call "Optional#isPresent()" before accessing the value.(ÏÉáíÿÿÿÿÿH¯RMAJORZBUG
+squid:CommentedOutCodeLine½"<This block of commented-out lines of code should be removed.(ü¸âßøÿÿÿÿH¯RMAJORZ
+CODE_SMELL
+msquid:S2696ƒ"6Make the enclosing method "static" or remove this set.(š¾éğÿÿÿÿÿH¯RCRITICALZ
+CODE_SMELL

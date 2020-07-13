@@ -1,0 +1,26 @@
+package com.sreekar.spring;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		
+		int age = 97;
+		int myAge = 98;
+		//char b = '9';
+		System.out.println((char) age +" "+(char) myAge);
+		
+		System.out.println((float) age);
+		
+//		AnnotationConfigApplicationContext config= new AnnotationConfigApplicationContext(AppConfig.class);
+//
+//		WindowsOS win = config.getBean(WindowsOS.class);
+//
+//		win.specification();
+//		
+//		config.close();
+
+	}
+
+}

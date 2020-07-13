@@ -1,0 +1,5 @@
+
+squid:S2975'"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(ÀÓ æùÿÿÿÿ8“¿½Äï-HºMRBLOCKERZ
+CODE_SMELL
+squid:S1182'"HUse super.clone() to create and seed the cloned instance to be returned.(ÀÓ æùÿÿÿÿ8“¿½Äï-H»MRMINORZ
+CODE_SMELL

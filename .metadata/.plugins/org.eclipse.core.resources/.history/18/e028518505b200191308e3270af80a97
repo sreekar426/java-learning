@@ -1,0 +1,28 @@
+package com.mindtree.java;
+
+import org.junit.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+
+import com.mindtree.dao.IZoneDao;
+import com.mindtree.exception.TaxException;
+import com.mindtree.service.IZoneService;
+import com.mindtree.service.impl.ZoneServiceImpl;
+
+public class ZoneTest {
+	
+	@Mock
+	IZoneService zoneService;
+	
+	@Mock
+	IZoneDao zoneDao;
+	
+	@InjectMocks
+	ZoneServiceImpl zoneServiceImpl;
+	
+	@Test
+	public void getZones() throws TaxException {
+	zoneServiceImpl.getAllZoneType();
+	}
+
+}

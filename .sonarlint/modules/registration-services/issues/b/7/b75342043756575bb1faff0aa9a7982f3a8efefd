@@ -1,0 +1,233 @@
+
+Osquid:S2386²"Make this member "protected".(ÕâèìH­²RMINORZVULNERABILITY
+˜squid:S1192ï"aUse already-defined constant 'TEMPLATE_LEFT_MIDDLE_FINGER' instead of duplicating its value here.(ùãÌûÿÿÿÿH®²RCRITICALZ
+CODE_SMELL
+Tsquid:S2386›"Make this member "protected".(·ğõ¨ûÿÿÿÿH¯²RMINORZVULNERABILITY
+psquid:S1075–"ARefactor your code to get this URI from a customizable parameter.(à°ÇİH°²RMINORZ
+CODE_SMELL
+{squid:S1444Ì"DMake this "public static DEDUPLICATION_FACE_ENABLE_FLAG" field final(Óó×øüÿÿÿÿH±²RMINORZVULNERABILITY
+usquid:S1075€"ARefactor your code to get this URI from a customizable parameter.(åÔ‰ÍùÿÿÿÿH²²RMINORZ
+CODE_SMELL
+squid:S00115£"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(•¨ŞûH³²RCRITICALZ
+CODE_SMELL
+’squid:S00115¾"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ˆ›˜ÅùÿÿÿÿH´²RCRITICALZ
+CODE_SMELL
+usquid:S1075‡"ARefactor your code to get this URI from a customizable parameter.(ûüŒ¨ûÿÿÿÿHµ²RMINORZ
+CODE_SMELL
+Œsquid:S00115ª"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(æÜ‹H¶²RCRITICALZ
+CODE_SMELL
+Ÿ"squid:ClassVariableVisibilityCheck©"VMake CANCEL_MSG a static final constant or non-public and provide accessors if needed.(„ß…ÑH·²RMINORZVULNERABILITY
+squid:S1192Í"\Use already-defined constant 'CLIENT_STATUS_APPROVED' instead of duplicating its value here.(€Ú„°H¸²RCRITICALZ
+CODE_SMELL
+vsquid:S1444È"?Make this "public static DEDUPLICATION_ENABLE_FLAG" field final( óƒÙÿÿÿÿÿH¹²RMINORZVULNERABILITY
+¸"squid:ClassVariableVisibilityCheckÌ"jMake DEDUPLICATION_FACE_ENABLE_FLAG a static final constant or non-public and provide accessors if needed.(Óó×øüÿÿÿÿHº²RMINORZVULNERABILITY
+„squid:S3008©"URename this field "CANCEL_MSG" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„ß…ÑH»²RMINORZ
+CODE_SMELL
+Tsquid:S2386Ñ"Make this member "protected".(¤–¥šøÿÿÿÿH¼²RMINORZVULNERABILITY
+jsquid:S1444Ì
+"3Make this "public static CNI_MANDATORY" field final(İñ†¸ùÿÿÿÿH½²RMINORZVULNERABILITY
+˜squid:S3008È"dRename this field "DEDUPLICATION_ENABLE_FLAG" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( óƒÙÿÿÿÿÿH¾²RMINORZ
+CODE_SMELL
+ˆsquid:S1192‰"QUse already-defined constant 'RightMiddle' instead of duplicating its value here.(¨ùùÿøÿÿÿÿH¿²RCRITICALZ
+CODE_SMELL
+ƒsquid:S1192¾
+"QUse already-defined constant 'POSTAL_CODE' instead of duplicating its value here.(¹Å‡ºHÀ²RCRITICALZ
+CODE_SMELL
+º"squid:ClassVariableVisibilityCheckÊ"qMake DEDUPLICATION_FINGERPRINT_ENABLE_FLAG a static final constant or non-public and provide accessors if needed.(ôışĞHÁ²RMINORZVULNERABILITY
+Œsquid:S00115§"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¥ÆÍHHÂ²RCRITICALZ
+CODE_SMELL
+Ÿsquid:S3008Ê"pRename this field "DEDUPLICATION_FINGERPRINT_ENABLE_FLAG" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôışĞHÃ²RMINORZ
+CODE_SMELL
+tsquid:S1075"ARefactor your code to get this URI from a customizable parameter.(ÔõŸÑûÿÿÿÿHÄ²RMINORZ
+CODE_SMELL
+usquid:S1075†"ARefactor your code to get this URI from a customizable parameter.(šàÛªùÿÿÿÿHÅ²RMINORZ
+CODE_SMELL
+usquid:S1075£"ARefactor your code to get this URI from a customizable parameter.(öÏ²ñøÿÿÿÿHÆ²RMINORZ
+CODE_SMELL
+Šsquid:S1192À
+"SUse already-defined constant 'DATE_OF_BIRTH' instead of duplicating its value here.(ÇÔíÄşÿÿÿÿHÇ²RCRITICALZ
+CODE_SMELL
+squid:S1192÷"WUse already-defined constant 'TEMPLATE_LEFT_EYE' instead of duplicating its value here.(’úèÁşÿÿÿÿHÈ²RCRITICALZ
+CODE_SMELL
+Šsquid:S1192ò"SUse already-defined constant 'SYNCED_STATUS' instead of duplicating its value here.(‚èÉæüÿÿÿÿHÉ²RCRITICALZ
+CODE_SMELL
+Tsquid:S2386º"Make this member "protected".(äè†ßøÿÿÿÿHÊ²RMINORZVULNERABILITY
+squid:S1192‚"OUse already-defined constant 'LeftIndex' instead of duplicating its value here.(°Ã°ÄHË²RCRITICALZ
+CODE_SMELL
+}squid:S1444Ê"KMake this "public static DEDUPLICATION_FINGERPRINT_ENABLE_FLAG" field final(ôışĞHÌ²RMINORZVULNERABILITY
+Osquid:S2386’"Make this member "protected".(šÑø›HÍ²RMINORZVULNERABILITY
+esquid:S1444—"3Make this "public static INITIAL_SETUP" field final(òÆÄ¶HÎ²RMINORZVULNERABILITY
+squid:S00115¬"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¹‹Ó¤HÏ²RCRITICALZ
+CODE_SMELL
+Osquid:S2386Í"Make this member "protected".(€Ú„°HĞ²RMINORZVULNERABILITY
+squid:S1171"YMove the contents of this initializer to a standard constructor or to field initializers.(ÒÌâ–øÿÿÿÿHÑ²RMAJORZ
+CODE_SMELL
+†squid:S1192Š"OUse already-defined constant 'RightRing' instead of duplicating its value here.(¦ÀúÿÿÿÿHÒ²RCRITICALZ
+CODE_SMELL
+usquid:S1075‰"ARefactor your code to get this URI from a customizable parameter.(Çè·øÿÿÿÿHÓ²RMINORZ
+CODE_SMELL
+tsquid:S1075|"ARefactor your code to get this URI from a customizable parameter.(ó”ã¿úÿÿÿÿHÔ²RMINORZ
+CODE_SMELL
+’squid:S00115¥"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(§ÖÍÿÿÿÿÿHÕ²RCRITICALZ
+CODE_SMELL
+psquid:S1075Œ"ARefactor your code to get this URI from a customizable parameter.(Œ±ÈĞHÖ²RMINORZ
+CODE_SMELL
+osquid:S1075y"ARefactor your code to get this URI from a customizable parameter.(ôíäÁH×²RMINORZ
+CODE_SMELL
+osquid:S1075z"ARefactor your code to get this URI from a customizable parameter.(Ìò’ıHØ²RMINORZ
+CODE_SMELL
+“squid:S1192Í"aUse already-defined constant 'PACKET_STATUS_CODE_REJECTED' instead of duplicating its value here.(€Ú„°HÙ²RCRITICALZ
+CODE_SMELL
+Tsquid:S2386ò"Make this member "protected".(‚èÉæüÿÿÿÿHÚ²RMINORZVULNERABILITY
+Tsquid:S2386ê"Make this member "protected".(€´šÇøÿÿÿÿHÛ²RMINORZVULNERABILITY
+squid:S1192¹
+"VUse already-defined constant 'UIN_UPDATE_PHONE' instead of duplicating its value here.(¶ÌµõøÿÿÿÿHÜ²RCRITICALZ
+CODE_SMELL
+usquid:S1075ˆ"ARefactor your code to get this URI from a customizable parameter.(®šˆªşÿÿÿÿHİ²RMINORZ
+CODE_SMELL
+‚squid:S1192ƒ"PUse already-defined constant 'LeftLittle' instead of duplicating its value here.(ÆÑÚÍHŞ²RCRITICALZ
+CODE_SMELL
+£"squid:ClassVariableVisibilityCheckÍ"ZMake RE_MAP_SUCCESS a static final constant or non-public and provide accessors if needed.(ñ¯ß˜Hß²RMINORZVULNERABILITY
+Osquid:S2386¥"Make this member "protected".(Ğà§ÄHà²RMINORZVULNERABILITY
+Tsquid:S2386³"Make this member "protected".(—Å¦ÓÿÿÿÿÿHá²RMINORZVULNERABILITY
+§"squid:ClassVariableVisibilityCheckÌ
+"YMake CNI_MANDATORY a static final constant or non-public and provide accessors if needed.(İñ†¸ùÿÿÿÿHâ²RMINORZVULNERABILITY
+¢"squid:ClassVariableVisibilityCheck—"YMake INITIAL_SETUP a static final constant or non-public and provide accessors if needed.(òÆÄ¶Hã²RMINORZVULNERABILITY
+³"squid:ClassVariableVisibilityCheckÈ"eMake DEDUPLICATION_ENABLE_FLAG a static final constant or non-public and provide accessors if needed.( óƒÙÿÿÿÿÿHä²RMINORZVULNERABILITY
+squid:S00115«"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(êèäHå²RCRITICALZ
+CODE_SMELL
+“squid:S1192ô"bUse already-defined constant 'TEMPLATE_RIGHT_MIDDLE_FINGER' instead of duplicating its value here.(’ª”qHæ²RCRITICALZ
+CODE_SMELL
+—squid:S1192ñ"`Use already-defined constant 'TEMPLATE_LEFT_THUMB_FINGER' instead of duplicating its value here.(ÿÂ‘™üÿÿÿÿHç²RCRITICALZ
+CODE_SMELL
+bsquid:S1444©"0Make this "public static CANCEL_MSG" field final(„ß…ÑHè²RMINORZVULNERABILITY
+Osquid:S2386•"Make this member "protected".(°Ô•ÌHé²RMINORZVULNERABILITY
+squid:S00115¤"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(’¶ä¦Hê²RCRITICALZ
+CODE_SMELL
+tsquid:S1075$"ARefactor your code to get this URI from a customizable parameter.(ä­­ÂúÿÿÿÿHë²RMINORZ
+CODE_SMELL
+usquid:S1075"ARefactor your code to get this URI from a customizable parameter.(Ñ¿øÿÿÿÿHì²RMINORZ
+CODE_SMELL
+squid:S1171ì"YMove the contents of this initializer to a standard constructor or to field initializers.(ÒÌâ–øÿÿÿÿHí²RMAJORZ
+CODE_SMELL
+‡squid:S3008—"XRename this field "INITIAL_SETUP" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òÆÄ¶Hî²RMINORZ
+CODE_SMELL
+squid:S00115¤"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ö·Ú“Hï²RCRITICALZ
+CODE_SMELL
+squid:S00115Ê"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ì¶ÎHğ²RCRITICALZ
+CODE_SMELL
+‡squid:S1192‹"PUse already-defined constant 'RightThumb' instead of duplicating its value here.(“ÔèŒùÿÿÿÿHñ²RCRITICALZ
+CODE_SMELL
+Osquid:S2386Ï"Make this member "protected".(¿â¯Hò²RMINORZVULNERABILITY
+’squid:S00115ï"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¿œıîúÿÿÿÿHó²RCRITICALZ
+CODE_SMELL
+’squid:S00115¦"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¯¢Ã–øÿÿÿÿHô²RCRITICALZ
+CODE_SMELL
+tsquid:S1075v"ARefactor your code to get this URI from a customizable parameter.(‚úÕ”úÿÿÿÿHõ²RMINORZ
+CODE_SMELL
+Tsquid:S2386ÿ"Make this member "protected".(”ÌêæıÿÿÿÿHö²RMINORZVULNERABILITY
+usquid:S1075ş"ARefactor your code to get this URI from a customizable parameter.(¾ÊÑúÿÿÿÿH÷²RMINORZ
+CODE_SMELL
+†squid:S1192†"OUse already-defined constant 'LeftThumb' instead of duplicating its value here.(°˜‚şÿÿÿÿHø²RCRITICALZ
+CODE_SMELL
+squid:S00115©"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Úø­ÑHù²RCRITICALZ
+CODE_SMELL
+osquid:S1075~"ARefactor your code to get this URI from a customizable parameter.(úºÄëHú²RMINORZ
+CODE_SMELL
+psquid:S1075¥"ARefactor your code to get this URI from a customizable parameter.(õŞú¯Hû²RMINORZ
+CODE_SMELL
+squid:S00115£"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ä°ÌîHü²RCRITICALZ
+CODE_SMELL
+’squid:S1192õ"`Use already-defined constant 'TEMPLATE_RIGHT_RING_FINGER' instead of duplicating its value here.(ÜêÙƒHı²RCRITICALZ
+CODE_SMELL
+†squid:S1192"OUse already-defined constant 'RIGHT_EYE' instead of duplicating its value here.(ÈÁ²ÈøÿÿÿÿHş²RCRITICALZ
+CODE_SMELL
+ˆsquid:S3008Í"YRename this field "RE_MAP_SUCCESS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ¯ß˜Hÿ²RMINORZ
+CODE_SMELL
+‘squid:S1192ò"ZUse already-defined constant 'SERVER_STATUS_RESEND' instead of duplicating its value here.(‚èÉæüÿÿÿÿH€³RCRITICALZ
+CODE_SMELL
+“squid:S1192î"aUse already-defined constant 'TEMPLATE_LEFT_LITTLE_FINGER' instead of duplicating its value here.(¿—‹›H³RCRITICALZ
+CODE_SMELL
+psquid:S1075€"ARefactor your code to get this URI from a customizable parameter.(Ñ–Õ‘H‚³RMINORZ
+CODE_SMELL
+usquid:S1075Î"ARefactor your code to get this URI from a customizable parameter.(ø·îúûÿÿÿÿHƒ³RMINORZ
+CODE_SMELL
+osquid:S1075{"ARefactor your code to get this URI from a customizable parameter.(›³ÆH„³RMINORZ
+CODE_SMELL
+squid:S00115¨"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(É©¹êH…³RCRITICALZ
+CODE_SMELL
+squid:S1192„"PUse already-defined constant 'LeftMiddle' instead of duplicating its value here.(“ù’xH†³RCRITICALZ
+CODE_SMELL
+‘squid:S1192ğ"_Use already-defined constant 'TEMPLATE_LEFT_RING_FINGER' instead of duplicating its value here.(ë…î‚H‡³RCRITICALZ
+CODE_SMELL
+{squid:S1444Ë"DMake this "public static DEDUPLICATION_IRIS_ENABLE_FLAG" field final(¸üƒåıÿÿÿÿHˆ³RMINORZVULNERABILITY
+zsquid:CommentedOutCodeLine§"<This block of commented-out lines of code should be removed.(¿‰ª´H‰³RMAJORZ
+CODE_SMELL
+‡squid:S1192‡"PUse already-defined constant 'RightIndex' instead of duplicating its value here.(ÓüıƒıÿÿÿÿHŠ³RCRITICALZ
+CODE_SMELL
+…squid:S1192…"NUse already-defined constant 'LeftRing' instead of duplicating its value here.(æìÛ·ûÿÿÿÿH‹³RCRITICALZ
+CODE_SMELL
+psquid:S1075‡"ARefactor your code to get this URI from a customizable parameter.(“ğ×òHŒ³RMINORZ
+CODE_SMELL
+Osquid:S2386˜"Make this member "protected".(şò‹éH³RMINORZVULNERABILITY
+‰squid:S2068ª"P'PWD' detected in this expression, review this potentially hardcoded credential.(óÖ–ûúÿÿÿÿH³RBLOCKERZVULNERABILITY
+Tsquid:S2386µ"Make this member "protected".(Ñ“¨­ûÿÿÿÿH³RMINORZVULNERABILITY
+“squid:S1192ó"bUse already-defined constant 'TEMPLATE_RIGHT_LITTLE_FINGER' instead of duplicating its value here.(¾ø5H³RCRITICALZ
+CODE_SMELL
+“squid:S1192ö"aUse already-defined constant 'TEMPLATE_RIGHT_THUMB_FINGER' instead of duplicating its value here.(º³ÅH‘³RCRITICALZ
+CODE_SMELL
+osquid:S1075}"ARefactor your code to get this URI from a customizable parameter.(ï™—´H’³RMINORZ
+CODE_SMELL
+psquid:S1075ÿ"ARefactor your code to get this URI from a customizable parameter.(µ‹ãH“³RMINORZ
+CODE_SMELL
+‚squid:S1192"KUse already-defined constant 'RIGHT' instead of duplicating its value here.(ÈÁ²ÈøÿÿÿÿH”³RCRITICALZ
+CODE_SMELL
+“squid:S1192ò"aUse already-defined constant 'TEMPLATE_RIGHT_INDEX_FINGER' instead of duplicating its value here.(‘şõH•³RCRITICALZ
+CODE_SMELL
+psquid:S1075¡"ARefactor your code to get this URI from a customizable parameter.(ÂĞ¹‹H–³RMINORZ
+CODE_SMELL
+ˆsquid:S1192ˆ"QUse already-defined constant 'RightLittle' instead of duplicating its value here.(»±ÂñøÿÿÿÿH—³RCRITICALZ
+CODE_SMELL
+usquid:S1075Ÿ"ARefactor your code to get this URI from a customizable parameter.(Åı´ÌıÿÿÿÿH˜³RMINORZ
+CODE_SMELL
+’squid:S1192í"`Use already-defined constant 'TEMPLATE_LEFT_INDEX_FINGER' instead of duplicating its value here.(¹ˆĞ½H™³RCRITICALZ
+CODE_SMELL
+osquid:S1075x"ARefactor your code to get this URI from a customizable parameter.(¥×ªğHš³RMINORZ
+CODE_SMELL
+€squid:S1192Œ"NUse already-defined constant 'LEFT_EYE' instead of duplicating its value here.(ç§¶H›³RCRITICALZ
+CODE_SMELL
+psquid:S1075Ï"ARefactor your code to get this URI from a customizable parameter.(³İ‡îHœ³RMINORZ
+CODE_SMELL
+squid:S1192·
+"VUse already-defined constant 'UIN_UPDATE_EMAIL' instead of duplicating its value here.(Ï¶ğ—ÿÿÿÿÿH³RCRITICALZ
+CODE_SMELL
+Ysquid:S3599ê",Use another way to initialize this instance.(€´šÇøÿÿÿÿH³RMINORZBUG
+squid:S1192ø"XUse already-defined constant 'TEMPLATE_RIGHT_EYE' instead of duplicating its value here.(íäÎùÿÿÿÿHŸ³RCRITICALZ
+CODE_SMELL
+squid:S3008Ë"iRename this field "DEDUPLICATION_IRIS_ENABLE_FLAG" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸üƒåıÿÿÿÿH ³RMINORZ
+CODE_SMELL
+Tsquid:S2386¨"Make this member "protected".(ññâÒùÿÿÿÿH¡³RMINORZVULNERABILITY
+squid:S3008Ì"iRename this field "DEDUPLICATION_FACE_ENABLE_FLAG" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Óó×øüÿÿÿÿH¢³RMINORZ
+CODE_SMELL
+¸"squid:ClassVariableVisibilityCheckË"jMake DEDUPLICATION_IRIS_ENABLE_FLAG a static final constant or non-public and provide accessors if needed.(¸üƒåıÿÿÿÿH£³RMINORZVULNERABILITY
+Osquid:S2386®"Make this member "protected".(éõõáH¤³RMINORZVULNERABILITY
+’squid:S00115¥"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(áğÔÿúÿÿÿÿH¥³RCRITICALZ
+CODE_SMELL
+`squid:S1135–"2Complete the task associated to this TODO comment.(´…ƒ«H¦³RINFOZ
+CODE_SMELL
+‰squid:S2068«"P'PWD' detected in this expression, review this potentially hardcoded credential.(Õ‘å›øÿÿÿÿH§³RBLOCKERZVULNERABILITY
+€squid:S1192ò"IDefine a constant instead of duplicating this literal "EXPORTED" 3 times.(‚èÉæüÿÿÿÿH¨³RCRITICALZ
+CODE_SMELL
+psquid:S1075‹"ARefactor your code to get this URI from a customizable parameter.(–Üş¢H©³RMINORZ
+CODE_SMELL
+usquid:S1075‰"ARefactor your code to get this URI from a customizable parameter.(àşÜÜøÿÿÿÿHª³RMINORZ
+CODE_SMELL
+Osquid:S2386°"Make this member "protected".(™¬€ H«³RMINORZVULNERABILITY
+nsquid:S1075w"ARefactor your code to get this URI from a customizable parameter.(ïÛóLH¬³RMINORZ
+CODE_SMELL
+Œsquid:S3008Ì
+"XRename this field "CNI_MANDATORY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İñ†¸ùÿÿÿÿH­³RMINORZ
+CODE_SMELL
+fsquid:S1444Í"4Make this "public static RE_MAP_SUCCESS" field final(ñ¯ß˜H®³RMINORZVULNERABILITY
+Ysquid:S3599ÿ",Use another way to initialize this instance.(”ÌêæıÿÿÿÿH¯³RMINORZBUG
+Osquid:S2386¢"Make this member "protected".(…ğäáH°³RMINORZVULNERABILITY

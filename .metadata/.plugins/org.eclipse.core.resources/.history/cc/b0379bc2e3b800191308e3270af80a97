@@ -1,0 +1,14 @@
+package com.sreekar.compare;
+
+import java.util.List;
+
+public class Mobile {
+	
+	private String name;
+	private int yearOfManufacture;
+	private double price;
+	
+	
+	
+
+}

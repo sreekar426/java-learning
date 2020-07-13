@@ -1,0 +1,8 @@
+package com.mindtree.dao;
+
+/**
+ * The Interface IDescriptionDao.
+ */
+public interface IDescriptionDao {
+
+}

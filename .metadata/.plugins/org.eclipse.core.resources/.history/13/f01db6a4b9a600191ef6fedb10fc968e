@@ -1,0 +1,24 @@
+package com.mindtree.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.mindtree.entity.ZoneTypeEntity;
+import com.mindtree.repository.ZoneRepository;
+import com.mindtree.service.IZoneService;
+
+@Service
+public class ZoneService implements IZoneService {
+
+	@Autowired
+	ZoneRepository zoneRepository;
+
+	@Override
+	public List<ZoneTypeEntity> getAllZoneType() {
+
+		return zoneRepository.findAll();
+	}
+
+}

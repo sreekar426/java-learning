@@ -1,0 +1,54 @@
+package com.mindtree.dao.impl;
+
+import java.util.List;
+
+import javax.transaction.Transactional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.mindtree.dao.IZoneDao;
+import com.mindtree.entity.ZoneTypeEntity;
+import com.mindtree.repository.ZoneRepository;
+
+/**
+ * The Class ZoneDaoImpl.
+ */
+@Repository
+public class ZoneDaoImpl implements IZoneDao {
+
+	/** The zone repository. */
+	@Autowired
+	ZoneRepository zoneRepository;
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see com.mindtree.dao.IZoneDao#getAllZones()
+	 */
+	@Override
+	public List<ZoneTypeEntity> getAllZones() {
+		return zoneRepository.findAll();
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see com.mindtree.dao.IZoneDao#getIndividualZone(java.lang.String)
+	 */
+	@Override
+	public ZoneTypeEntity getIndividualZone(String zoneId) {
+		return zoneRepository.findByZoneType(zoneId);
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see com.mindtree.dao.IZoneDao#saveZone(com.mindtree.entity.ZoneTypeEntity)
+	 */
+	@Override
+	public void saveZone(ZoneTypeEntity zone) {
+		zoneRepository.save(zone);
+	}
+
+}

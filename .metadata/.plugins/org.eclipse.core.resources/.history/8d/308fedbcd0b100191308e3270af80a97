@@ -1,0 +1,57 @@
+package com.mindtree.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.mindtree.dao.IZoneDao;
+import com.mindtree.entity.ZoneTypeEntity;
+import com.mindtree.repository.ZoneRepository;
+import com.mindtree.service.IZoneService;
+
+/**
+ * The Class ZoneServiceImpl.
+ */
+@Service
+public class ZoneServiceImpl implements IZoneService {
+
+	/** The zone repository. */
+	@Autowired
+	IZoneDao zoneDao;
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see com.mindtree.service.IZoneService#getAllZoneType()
+	 */
+	@Override
+	public List<ZoneTypeEntity> getAllZoneType() {
+
+		return zoneDao.findAll();
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see com.mindtree.service.IZoneService#getZoneType(java.lang.String)
+	 */
+	@Override
+	public ZoneTypeEntity getZoneType(String zoneId) {
+
+		return zoneDao.findByZoneType(zoneId);
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see com.mindtree.service.IZoneService#saveZoneDetails(com.mindtree.entity.
+	 * ZoneTypeEntity)
+	 */
+	@Override
+	public void saveZoneDetails(ZoneTypeEntity zone) {
+		zoneDao.zoneDao(zone);
+
+	}
+
+}

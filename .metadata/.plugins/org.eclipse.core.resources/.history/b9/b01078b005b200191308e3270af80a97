@@ -1,0 +1,40 @@
+package com.mindtree.java;
+
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.mockito.Mockito.mock;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+
+import com.mindtree.dao.IZoneDao;
+import com.mindtree.entity.ZoneTypeEntity;
+import com.mindtree.exception.TaxException;
+import com.mindtree.service.IZoneService;
+import com.mindtree.service.impl.ZoneServiceImpl;
+
+public class ZoneTest {
+	
+	@Mock
+	IZoneService zoneService;
+	
+	@Mock
+	IZoneDao zoneDao;
+	
+	@InjectMocks
+	ZoneServiceImpl zoneServiceImpl;
+	
+	@Test
+	public void getZones() throws TaxException {
+		List<ZoneTypeEntity> zoneList=new ArrayList<ZoneTypeEntity>();
+		Mockito.when(zoneServiceImpl.getAllZoneType()).thenReturn(zoneList);
+		List<ZoneTypeEntity> zoneList = zoneServiceImpl.getAllZoneType();
+		assertNotNull(zoneList);
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.sreekar.spring;
+
+import java.io.FileReader;
+
+public class FileReaderExample {
+	 public static void main(String args[])throws Exception{    
+         FileReader fr=new FileReader("D:\\mosip\\registration-1\\registration\\registration-client\\logs\\registration.log");    
+         int i;    
+         while((i=fr.read())!=-1)    
+         System.out.print(Integer.bitCount(i));    
+         fr.close();    
+   }    
+}

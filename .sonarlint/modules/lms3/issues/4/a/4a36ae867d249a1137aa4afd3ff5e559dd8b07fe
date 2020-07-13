@@ -1,0 +1,10 @@
+
+squid:UselessImportCheck"QRemove this unused import 'org.springframework.context.annotation.Configuration'.(¬²ÚäşÿÿÿÿHĞRMINORZ
+CODE_SMELL
+šsquid:UselessImportCheck"[Remove this unused import 'org.springframework.boot.autoconfigure.EnableAutoConfiguration'.(æèşŞøÿÿÿÿHÑRMINORZ
+CODE_SMELL
+Tsquid:S1068"'Remove this unused "log" private field.(úˆ¨îHÏRMAJORZ
+CODE_SMELL
+squid:UselessImportCheck
+"QRemove this unused import 'org.springframework.context.annotation.ComponentScan'.(æëòÒûÿÿÿÿHÒRMINORZ
+CODE_SMELL

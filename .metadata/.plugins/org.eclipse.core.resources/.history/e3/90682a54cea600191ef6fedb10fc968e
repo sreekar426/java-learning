@@ -1,0 +1,17 @@
+<html lang="en">
+<head>
+<style></style>
+<link rel="stylesheet" href="css/tax.css">
+<title>Property Tax Management</title>
+</head>
+
+<body>
+	<h3>Property Tax</h3>
+	<div>
+		<a href="addTax" onmouseover="this.style.color='blue';"
+			onmouseout="this.style.color='black';">Self-Assessment Form</a><a
+			href="viewTax" onmouseover="this.style.color='blue';"
+			onmouseout="this.style.color='black';">Zonal-wise report</a>
+	</div>
+</body>
+</html>

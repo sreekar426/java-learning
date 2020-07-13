@@ -1,0 +1,54 @@
+
+Òsquid:S1192°"šDefine a constant instead of duplicating this literal "Exception while getting the scanned Finger details for user registration: %s caused by %s" 4 times.(ÑçŒçûÿÿÿÿHË–RCRITICALZ
+CODE_SMELL
+squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(·³Š“şÿÿÿÿHÌ–RMINORZ
+CODE_SMELL
+squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ù„³¡üÿÿÿÿHÍ–RMINORZ
+CODE_SMELL
+ˆsquid:S2293“"YReplace the type specification in this constructor call with the diamond operator ("<>").(å‘ÜÑHÎ–RMINORZ
+CODE_SMELL
+‹squid:S3973¯"YUse curly braces or indentation to denote the code conditionally executed by this "else".(ÔÍØHÏ–RCRITICALZ
+CODE_SMELL
+Wsquid:S1125Ü")Remove the literal "false" boolean value.(ö‘¬oHĞ–RMINORZ
+CODE_SMELL
+xsquid:HiddenFieldChecké	">Rename "exception" which hides the field declared at line 277.(‰à¼ªHÑ–RMAJORZ
+CODE_SMELL
+xsquid:HiddenFieldCheckÑ">Rename "exception" which hides the field declared at line 277.(®ËúÃHÒ–RMAJORZ
+CODE_SMELL
+isquid:S1141Ê"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿHÓ–RMAJORZ
+CODE_SMELL
+^squid:S1481ƒ"/Remove this unused "detailsDTO" local variable.(Œ¹¹şHÔ–RMINORZ
+CODE_SMELL
+^squid:S1481Ñ"/Remove this unused "detailsDTO" local variable.(Œ¹¹şHÕ–RMINORZ
+CODE_SMELL
+‰squid:S3776£"RRefactor this method to reduce its Cognitive Complexity from 93 to the 15 allowed.(ÛŒ¦…ıÿÿÿÿHÖ–RCRITICALZ
+CODE_SMELL
+„squid:S3776º	"RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(íø¢ÉH×–RCRITICALZ
+CODE_SMELL
+‰squid:S3776ı"RRefactor this method to reduce its Cognitive Complexity from 57 to the 15 allowed.(ªŒäÙúÿÿÿÿHØ–RCRITICALZ
+CODE_SMELL
+asquid:S1172Û"2Remove this unused method parameter "fpthreshold".(Ÿ ¤¨HÙ–RMAJORZ
+CODE_SMELL
+isquid:S1172Û"5Remove this unused method parameter "selectedPaneId".(×Óç­úÿÿÿÿHÚ–RMAJORZ
+CODE_SMELL
+qsquid:S1172ò"=Remove this unused method parameter "fingerprintDetailsDTOs".(ÊÍãüÿÿÿÿHÛ–RMAJORZ
+CODE_SMELL
+‡squid:S2259¤"Z"NullPointerException" will be thrown when invoking method "findingExceptionDifference()".(©»°ñüÿÿÿÿHÜ–RMAJORZBUG
+lsquid:S00107º	"<Method has 9 parameters, which is greater than 7 authorized.(íø¢ÉHİ–RMAJORZ
+CODE_SMELL
+‚squid:S1602‚
+"SRemove useless curly braces around statement and then remove useless return keyword(çØÏôHŞ–RMINORZ
+CODE_SMELL
+\squid:S1604Ø"(Make this anonymous inner class a lambda(‘ÔüÿÿÿÿHß–RMAJORZ
+CODE_SMELL
+`squid:S1612¼",Replace this lambda with a method reference.(ØÛÓğøÿÿÿÿHà–RMINORZ
+CODE_SMELL
+`squid:S1612¿",Replace this lambda with a method reference.(úÿÍµüÿÿÿÿHá–RMINORZ
+CODE_SMELL
+xsquid:S1854¦"DRemove this useless assignment to local variable "bioExceptionList".(­¿Ş¹ûÿÿÿÿHâ–RMAJORZ
+CODE_SMELL
+ssquid:S3358ñ"DExtract this nested ternary operation into an independent statement.(½ïš®Hã–RMAJORZ
+CODE_SMELL
+†squid:S00117²"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àï¸ÑúÿÿÿÿHä–RMINORZ
+CODE_SMELL
+Zsquid:S1148Ü"#Use a logger to log this exception.(ÙŸÌşÿÿÿÿHå–RMINORZVULNERABILITY

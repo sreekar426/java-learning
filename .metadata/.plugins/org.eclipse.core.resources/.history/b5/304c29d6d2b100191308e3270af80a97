@@ -1,0 +1,16 @@
+package com.mindtree.service;
+
+import com.mindtree.entity.DescriptionEntity;
+
+public interface IDescriptionService {
+
+	/**
+	 * Gets the desc type.
+	 *
+	 * @param descType the desc type
+	 * @param zoneId the zone id
+	 * @return the desc type
+	 */
+	DescriptionEntity getDescType(String descType, int zoneId);
+
+}

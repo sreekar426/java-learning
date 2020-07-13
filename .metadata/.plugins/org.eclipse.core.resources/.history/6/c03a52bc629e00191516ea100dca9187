@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<html lang="en">
+<body>
+    <div>
+        <div>
+            Click for <a href="#blabla" onclick="function1()"> CreateTask</a>
+            Click for <a href="#" onclick="function()"> ViewTask</a>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript">
+$(document).load(function(){
+  $('#blabla').click(function(){
+  alert("Clicked");
+  });
+});
+</script>
+</html>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;MvcConfiguration.java&apos; to &apos;simple-java-spring/src/main/java/com.kiran.myApp&apos;&#x0D;&#x0A;- Original project: &apos;Employee-Mangment&apos;&#x0D;&#x0A;- Destination element: &apos;simple-java-spring/src/main/java/com.kiran.myApp&apos;&#x0D;&#x0A;- Original element: &apos;com.mindtree.myApp.MvcConfiguration.java&apos;" description="Copy compilation unit" destination="=simple-java-spring/src\/main\/java&lt;com.kiran.myApp" element1="/src\/main\/java&lt;com.mindtree.myApp{MvcConfiguration.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1569213399868" units="1" version="1.0"/>
+</session>

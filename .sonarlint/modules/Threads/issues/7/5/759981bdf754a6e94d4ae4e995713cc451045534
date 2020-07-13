@@ -1,0 +1,7 @@
+
+€squid:S00116"MRename this field "Id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬µä›şÿÿÿÿHĞTRMINORZ
+CODE_SMELL
+‚squid:S00116"ORename this field "Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É¬­ÁøÿÿÿÿHÑTRMINORZ
+CODE_SMELL
+’squid:S1210"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(Î²›øÿÿÿÿ8¦ª©ø-HæTRMINORZ
+CODE_SMELL

@@ -1,0 +1,11 @@
+
+„squid:S3776¯"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(ö¡¾ûH¥˜RCRITICALZ
+CODE_SMELL
+„squid:S3776±"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(áž†²H¦˜RCRITICALZ
+CODE_SMELL
+Zsquid:S1172¾"+Remove this unused method parameter "page".(Ë×©ÐH§˜RMAJORZ
+CODE_SMELL
+\squid:S1604±"(Make this anonymous inner class a lambda(×©ðýþÿÿÿÿH¨˜RMAJORZ
+CODE_SMELL
+Wsquid:S1604á"(Make this anonymous inner class a lambda(¦Éª²H©˜RMAJORZ
+CODE_SMELL

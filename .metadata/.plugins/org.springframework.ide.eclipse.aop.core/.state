@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="Employee-Mangment"/>
+<aop-project name="AuthorizationServerApplication"/>
+<aop-project name="sample-project"/>
+<aop-project name="SpringLearing"/>
+<aop-project name="java"/>
+<aop-project name="springInterceptor"/>
+<aop-project name="Spring-Derby"/>
+<aop-project name="Spring-Restful-Webservices"/>
+<aop-project name="lms3"/>
+<aop-project name="SpringAutowire"/>
+<aop-project name="Spring_Boot_MVC_Example"/>
+<aop-project name="Spring4MVCHelloWorldNoXMLDemo"/>
+<aop-project name="registration-libs"/>
+<aop-project name="registration-services"/>
+<aop-project name="springData"/>
+<aop-project name="registration-functional-test"/>
+<aop-project name="sampleProject"/>
+<aop-project name="spring-boot-exceptionhandling"/>
+<aop-project name="spring-oauth2-resource-server-demo"/>
+<aop-project name="Spring-Web"/>
+<aop-project name="registration-client"/>
+</aop-reference-model>

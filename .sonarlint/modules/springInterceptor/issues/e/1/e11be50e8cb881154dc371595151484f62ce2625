@@ -1,0 +1,5 @@
+
+—squid:UselessImportCheck"QRemove this unused import 'org.springframework.context.annotation.ComponentScan'.(æëòÒûÿÿÿÿ8ó»Ì¶ñ-HáNRMINORZ
+CODE_SMELL
+|squid:CallToDeprecatedMethod"?Remove this use of "WebMvcConfigurerAdapter"; it is deprecated.(¡žÊHÙNRMINORZ
+CODE_SMELL

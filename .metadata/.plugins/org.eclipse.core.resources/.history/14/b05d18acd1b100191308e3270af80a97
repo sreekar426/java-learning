@@ -1,0 +1,29 @@
+package com.mindtree.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.mindtree.dao.IPropertyDao;
+import com.mindtree.entity.PropertyEntity;
+import com.mindtree.service.IPropertyService;
+
+@Service
+public class PropertyServiceImpl implements IPropertyService {
+
+	/** The property DAO. */
+	@Autowired
+	private IPropertyDao propertyDao;
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see com.mindtree.service.IPropertyService#getPropertyDetails(int,
+	 * java.lang.String)
+	 */
+	@Override
+	public PropertyEntity getPropertyDetails(int descId, String status) {
+
+		return propertyDao.getPropertyDetails(descId, status);
+	}
+
+}

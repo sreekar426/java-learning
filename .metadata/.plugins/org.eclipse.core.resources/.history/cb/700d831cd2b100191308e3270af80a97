@@ -1,0 +1,5 @@
+package com.mindtree.dao.impl;
+
+public class DescriptionDaoImpl {
+
+}

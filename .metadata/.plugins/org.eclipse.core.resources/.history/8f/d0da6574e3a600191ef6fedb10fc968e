@@ -1,0 +1,197 @@
+$(document).ready(
+		function() {
+			$("#totalId").val('');
+			$.ajax({
+				url : "/all",
+				datatype : "JSON",
+				type : "Get",
+				cache : false,
+				success : function(data) {
+					$.each(data, function(i, item) {
+						$('#zoneId').append(
+								'<option value="' + data[i] + '">' + data[i]
+										+ '</option>');
+					});
+
+				},
+
+			});
+
+		});
+
+function getDescription() {
+	var pathParam = $("#zoneId").val();
+	$("#totalId").val('');
+	$("#propertyTypeId").empty();
+	$("#propertyTypeId").val('--select--');
+
+	if (null != pathParam && pathParam == 'select') {
+
+		var o = new Option("option text", "--select--");
+		$(o).html("--select--");
+		$("#propertyTypeId").append(o);
+
+	}
+
+	if (null != pathParam && pathParam != 'select') {
+		$.ajax({
+			url : "/tax/" + pathParam,
+			datatype : "JSON",
+			type : "Get",
+			cache : false,
+			success : function(data) {
+				$.each(data, function(i, item) {
+					$('#propertyTypeId').append(
+							'<option value="' + data[i] + '">' + data[i]
+									+ '</option>');
+				});
+
+			},
+
+		});
+	}
+
+}
+
+function cleanSelected() {
+	$("#totalId").val('');
+}
+
+function propertyCalculation(x) {
+
+	var developerData = {};
+
+	developerData["zoneId"] = $("#zoneId").val();
+
+	developerData["propertyId"] = $("#propertyTypeId").val();
+
+	developerData["status"] = $("#status").val();
+
+	developerData["yearId"] = $("#yearId").val();
+
+	developerData["areaId"] = $("#areaId").val();
+
+	if ($("yearId").val() != '' && $("#areaId").val() != '') {
+
+		$.ajax({
+			url : "/cal",
+			datatype : "JSON",
+			type : "POST",
+			cache : false,
+			data : JSON.stringify(developerData),
+			contentType : "application/json; charset=utf-8",
+
+			success : function(data) {
+				if (null != data && data != 0) {
+					$("#bttnsubmit").removeAttr("disabled");
+				}
+				$("#totalId").val(data);
+			},
+
+		});
+	}
+
+}
+
+function yearValidation(year, ev) {
+
+	var text = /^[0-9]+$/;
+	if (ev.type == "blur" || year.length == 4 && ev.keyCode != 8
+			&& ev.keyCode != 46) {
+		if (year != 0) {
+			if ((year != "") && (!text.test(year))) {
+
+				alert("Please Enter Numeric Values Only");
+				$("#assessmentYearId").val('');
+				return false;
+			}
+
+			if (year.length != 4) {
+				alert("Year is not proper. Please check");
+				$("#assessmentYearId").val('');
+				return false;
+			}
+			var current_year = new Date().getFullYear();
+			if (year > current_year) {
+				alert("Year should not be greater than current year");
+				$("#assessmentYearId").val('');
+				return false;
+			}
+			return true;
+		}
+	}
+}
+
+function yearValidate(year, ev) {
+
+	var text = /^[0-9]+$/;
+	if (ev.type == "blur" || year.length == 4 && ev.keyCode != 8
+			&& ev.keyCode != 46) {
+		if (year != 0) {
+			if ((year != "") && (!text.test(year))) {
+
+				alert("Please Enter Numeric Values Only");
+				$("#yearId").val('');
+				return false;
+			}
+
+			if (year.length != 4) {
+				alert("Year is not proper. Please check");
+				$("#yearId").val('');
+				return false;
+			}
+			var current_year = new Date().getFullYear();
+			if (year > current_year) {
+				alert("Year should not be greater than current year");
+				$("#yearId").val('');
+				return false;
+			}
+			return true;
+		}
+	}
+}
+
+function clean() {
+	var pathParam = $("#propertyTypeId").val();
+	$("#propertyTypeId").empty();
+	if (null != pathParam) {
+
+		var o = new Option("option text", "--select--");
+		$(o).html("--select--");
+		$("#propertyTypeId").append(o);
+
+	}
+
+}
+
+
+$(document).ready(
+		function() {
+
+			$.ajax({
+				url : "/zoneValue",
+				datatype : "JSON",
+				type : "Get",
+				cache : false,
+				success : function(data) {
+					var trHTML = '';
+					$.each(data, function(i, item) {
+
+						trHTML += '<tr>' + '<th rowspan="2">'
+								+ item.zoneType + '</th>' + '<td>'
+								+ 'Owner' + '</td>' + '<td class="temp">'
+								+ '&#8377; '
+								+ Math.round(item.ownerAmount * 100.0)
+								/ 100.0 + '</td>' + '</tr>' + '<tr>'
+								+ '<td>' + 'Tenanted' + '</td>'
+								+ '<td class="temp">' + '&#8377; '
+								+ Math.round(item.tenantAmount * 100.0)
+								/ 100.0 + '</td>' + '</tr>';
+
+					});
+					$('#tableId').append(trHTML);
+				},
+
+			});
+
+		});

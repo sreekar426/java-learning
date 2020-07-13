@@ -1,0 +1,15 @@
+package com.mindtree.utill;
+
+public class Calculation {
+
+	
+	public static String taxCalculation(String areaSqMts,double uav,String yearId) {
+		
+		
+		
+		return yearId;
+		
+	}
+	
+	
+}

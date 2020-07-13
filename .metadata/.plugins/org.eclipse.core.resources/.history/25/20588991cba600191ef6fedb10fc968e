@@ -1,0 +1,66 @@
+a {
+	line-height: 1em;
+	display: inline-block;
+	text-decoration: none;
+	padding: 30px;
+	margin: 5px;
+	text-decoration: underline;
+}
+
+h3 {
+	text-align: left;
+	padding-left: 160px;
+}
+
+table {
+	border: 1px solid black;
+	border-collapse: collapse;
+	width: 200px;
+}
+
+/* th, td {
+	padding: 5px;
+	text-align: left;
+} */
+
+div.a {
+	font-weight: bold;
+	padding: 5px;
+	text-align: center;
+}
+
+.temp {
+	text-align: right;
+}
+
+div.d {
+	padding-left: 10px;
+	padding-top: 5px;
+	text-align: left;
+	padding-top: 5px;
+}
+
+div.d {
+	padding-left: 2px;
+	text-align: left;
+	padding-bottom: 50px;
+}
+
+.ex1 {
+	height: 40px;
+	width: 200px;
+	overflow-y: scroll;
+}
+
+.button {
+	background-color: blue;
+	border: none;
+	color: white;
+	padding: 2px 12px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
