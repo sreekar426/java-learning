@@ -1,0 +1,47 @@
+1.  Spring vs Spring MVC vs Spring Boot (Architecture)
+2.  lifecycle of spring vs spring boot
+3.  sterotype annotations (component vs service vs controller vs repository)
+4.  Feature of spring
+5.  DI , IOC (autowire, qualifier)
+6.  AOP ( pointcut, before, after , etc check all annotations) vs spring boot @RestControllerAdvice
+7.  transcation management ( rollback, propagation) and check how it internally works
+8.  types of DI, which one default ?
+9.  different types of bean creation in spring
+10. Spring bean java based configuration using @Configuration and @Bean
+11. How to load multiple spring bean configuration files?
+12. Use of @import
+13. Spring bean tag properties (attributes)
+14. autowiring modes
+15. How to filter components in auto scanning?
+16. Dispatcher servlet vs ViewResolver
+17. profiling
+18. log4J vs logback
+19. spring batch ( itemreader, itemwriter, itemprocessor)
+20. spring quartz scheduler
+21. spring security ( WebSecurityConfigurerAdapter, preauthorize, etc)
+22. spring boot package structure
+23. spring integeration with rabbitmq or activemq or kafka
+24. elastic search operations and ELK stack
+25. jpa implementations
+26. methods to resolve env variables ( spring env , @value, @configurationproperties, etc)
+27. Isolation levels (default, read commited, read uncommitted, repeatable read, serializable)
+28. spring filter and spring interceptor
+29. @Primary, @ModelAttribute, @SessionAttributes, @InitBinder
+30. Application Context
+31. what happens when we autowire prototype bean into singleton class? if any problem how to resolve?
+32. spring singleton vs java singleton
+33. @SpringBootApplication and @EnableAutoConfiguration
+34. How to exclude any package without using the basePackages filter
+35. How to disable a specific auto-configuration class
+36. How to Register a Custom Auto-Configuration
+37. How to Tell an Auto-Configuration to Back Away When a Bean Exists
+38. Spring Boot supports relaxed binding
+39. REST, REST protocol
+40. rest operations
+41. rest idempotent operations 
+42. HTTP methods
+43. PUT vs POST vs PATCH
+44. rest is secure ?
+45. Is REST normally stateless? 
+46. @restcontroller vs @controller and @requestmapping and @ResponseStatus
+47. What is the HTTP status return code for a successful DELETE statement

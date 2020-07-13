@@ -1,0 +1,32 @@
+IMap
+ISortedMap extends IMap
+INavigableMap extends ISortedMap
+TreeMap extends AbstractMap implements INavigableMap,Clonable,serialization 
+
+Navigable Map / sotred Map
+
+ISortedMap - methods
+subMap(from,to) - we can make a sub map by giving from and to keys
+headMap(toKey) - returns a portion of view whoes keys is less than the toKey
+tailMap(fromKey) - returns a portion of view whoes keys is greater/equlas the toKey
+firstKey - returns first lowest key
+lastKey - returns last highest key
+
+INavigableMap - methods
+
+descendingMap() : Returns a reverse order view of the mappings contained in this map.
+
+Class TreeMap - methods.
+pollLastEntry()-the removed first entry of this map
+pollFirstEntry()-the removed first entry of this map
+firstKey()
+lastKey()
+
+
+LinkedHashMap extends HashMap implements Map
+stores inserted order...
+it uses doubly linked list..
+LinkedHashMap is a combination of both a HashMap and a LinkedList.
+
+The HashMap allows quick lookup.
+The LinkedList maintains insertion order.

@@ -1,0 +1,68 @@
+1. 	String vs string builder vs string buffer
+2. 	String pool , String metadata
+3. 	how to store string in heap space
+4. 	String permutations coding
+5. 	Why string is immutable
+6. 	why override equals & hashcode
+7. 	immutable class
+8. 	marker interface
+9. 	object
+10. clone
+11. searialization vs externalizable
+12. how does memory occupied for primitive & objects
+13. Association vs aggregation vs composition
+14. list vs map vs set
+15. arraylist vs linkedlist
+16. implementation of arraylist
+17. implementation of hashmap
+18. implementation of concurrent hashmap
+19. configure payload and load factor in hashmap
+20. comparator vs comporable
+21. collection sorting and array sorting
+22. itreator vs list iterator vs splititerator
+23. streams (filter,map,collectors,reduce)
+24. abstract class vs interface vs functional interface
+25. java singleton class
+26. code practice to remove duplicats, take distinct count, etc in collections class
+27. static methods and static variables
+28. ways to create object
+29. fail fast vs fail safe iterator
+30. function overloading and overriding tricky questions
+31. final keyword in prespective of class, variable , methods
+32. coherent return types
+33. throws vs throwable
+34. autoclosable interface (try with resources)
+35. default methods and static in interface
+36. Generics (usage of wildcards)
+37. thread vs task
+38. threadpool vs thread local vs thread group
+39. executor service in thread(ways of creating thread groups)
+40. fork , join (work stealing algorithm)
+41. sleep, wait
+42. other function inside thread
+43. Exception , custom exception(how to create checked and unchecked exception class)
+44. deadlock in thread
+45. thread mointoring (jconsole, jstack)
+46. thread vs runnable vs callable
+47. future in threads
+48. how to stop a thread
+49. Atomic variables
+50. synchronize block vs synchronize variable vs synchronize methods
+51. static in threads
+52. Locks and re-enterant lock
+53. Live lock
+54. Thread Stravation
+55. mutex vs semaphore vs spinlock
+56. synchronus queue 
+57. priority queue
+58. linked block queue
+59. hashmap vs linkedhashmap
+60. static synchronization vs object synchronization
+61. weak reference vs soft reference vs phantomreference
+62. weak hashmap vs identity hashmap
+63. how to prevent singleton while using reflection, serialization and cloning
+64. throw vs thows vs throwable
+65. final vs finally vs finalize
+66. how classloader works
+67. Algorithm & DS used in collections
+68. Transient and Volatile Modifiers

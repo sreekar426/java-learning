@@ -1,0 +1,27 @@
+Initialization of beans
+
+recommended - init-method , destroy-method in spring.xml
+
+by implementing two marker interface , Initialization Bean ,Disposable Bean...
+we need to override afterPropertiesSet(),destroy() methods
+
+by using annotation @PostConstruct and @PreDestroy
+
+
+Bean lifeCycle :
+
+Life cycle callbacks
+Spring bean factory controls the creation and destruction of beans. To execute some custom code, 
+
+it provides the call back methods which can be categorized broadly in two groups:
+
+Post-initialization call back methods
+Pre-destruction call back methods
+
+Instaistiation --> prepare propereties --> bean name aware setBeanName()--> bean Factory aware setBeanFactory() -->
+
+postProcessor Before-initialization BeanPostProcessor --> bean initialization -->custom init method call --> postProcessor-After initialization BeanPostProcessor  
+
+Disposable Bean destroy() --> Custom Destroy Method
+
+

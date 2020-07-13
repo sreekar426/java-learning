@@ -1,0 +1,69 @@
+Spring Interceptors..
+
+we can create interceptor using - extends (abstrct class) HandlerInterceptorAdapter.
+
+HandlerInterceptorAdapter implements - (interface) AsyncHandlerInterceptor - extends  (Interface) HandlerInterceptor
+
+methods in Interceptors
+
+boolean preHandle(HttpRequest request,HttpResponse response , Object obj);
+
+This will be exceuted before request is being handed over to the handler method.
+
+it should return true,in order to let Spring know to process the request through another
+spring interceptor or to send it to handler method if there are no further spring interceptors.
+
+If it return flase, it means the request is hadled by interceptor itself and we need to return a response object.
+
+Object handler is the chosen handler object to handle the request.
+
+void postHandle(HttpServletRequest request, HttpServletResponse response, Object obj,
+			ModelAndView modelAndView)
+
+This will be executed when HandlerAdapter has invoked the handler but DispatcherServlet is yet to render the view. 
+This help us in doing any modification, or to show any information using model and view. 
+			
+			
+void afterCompletion(HttpServletRequest request, HttpServletResponse response,
+           Object handler, Exception ex)
+		   
+This is a HandlerInterceptor callback method that is called once the handler is executed and view is rendered.
+		   
+		   
+To add an interceptor we need to extend our class with WebMvcConfigurerAdapter and we need to override addRegistery() - method.
+
+example:-
+
+@Override
+
+	public void addInterceptors(InterceptorRegistry registry) {
+		registry.addInterceptor(new SreekarInterceptor());  -- this will be called for all request 
+		registry.addInterceptor(new SreekarInterceptor()).addPathPatterns("/person/save/*");  --  this will be called only if the path matches.
+	}
+	
+  addPathPattren is used for adding specific pattren to intercept.
+  excludePathPatterns is used to exclude the interceptor 
+  
+ we can use xml file also 
+ 
+ <mvc:interceptors>
+    <bean class="Interceptors class"/>
+	
+	excluding interceptor
+    <mvc:interceptor>
+        <mvc:mapping path="/**"/>
+        <mvc:exclude-mapping path="/admin/**"/>
+        <bean class="org.springframework.web.servlet.theme.ThemeChangeInterceptor"/>
+    </mvc:interceptor>
+	
+    <mvc:interceptor>
+        <!-- intercept multiple urls -->
+        <mvc:mapping path="/secure/*"/>
+        <mvc:mapping path="/admin/**"/>
+        <mvc:mapping path="/profile/**"/>
+        <bean class="org.example.SecurityInterceptor"/>
+    </mvc:interceptor>
+	
+</mvc:interceptors>
+ 
+ 

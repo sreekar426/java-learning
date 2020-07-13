@@ -1,0 +1,22 @@
+Exception in Spring MVC
+
+
+1)Controller Based
+It will be handled in class level
+
+
+@ExceptionHandler - is used to handle specific exception and send some custome response to the client
+
+2)Global Exception Handler 
+Applicale for all the controllers
+It will be handled Globally
+@ControllerAdvice -  is used to handle exception globally.
+
+
+
+
+
+
+
+
+@ResponseStatus - Http code will be sent to client

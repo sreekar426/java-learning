@@ -1,0 +1,33 @@
+Spring AOP
+
+Methods - @After,@AfterReturning,@AfterThrowing,@Around,@Before
+
+Aspect - Is the class that implement cross cuting things.
+Join Point - it is noting but point where method execution,exception handling.. it is more over method exception
+Advice - it is the action that need to be taken for a particular joint point 
+Pointcut - Pointcut is expressions that are matched with join points to determine whether advice needs to be executed or not
+Target Object - proxy object on which advice is applied
+
+
+
+
+Entry point for spring boot application is calss that contains @SpringBootApplication and main method
+Spring boot enables auto configuration @EnableAutoConfiguration annotation
+@ComponentScan - used to scan all the componets in the spring application
+
+spring-boot-starter-* where * indicates type of application
+
+Auto Configuration:-
+@SpringBootApplication = @EnableAutoConfiguration + @ComponentScan + @SpringBootConfiguration
+
+How to deploye a War file using spring boot:-
+The traditional way of deployment is making the Spring Boot Application @SpringBootApplication class extend the SpringBootServletInitializer class.
+
+spring.profile.active=prod	  
+
+
+yield() - Incase our thread doesn't have much priority and will take time mean while if any other threads need to be exceuted which is less time then we can use this.
+          It is totally maintained by thread sceduler, it will look for the other threads with higher/same priority and allows them to run , otherwise it will allow the current running thread.
+
+sleep() - Incase if we want to pause our thread for particular period of time then we will use thread.sleep(1000)
+join()  - If we apply thread.join() it will wait untill the thread finish its execution	
