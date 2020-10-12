@@ -1,0 +1,1 @@
+Singleton can be breaked in three ways 
