@@ -1,1 +1,17 @@
 Singleton can be breaked in three ways 
+
+1. Using Reflection
+2. Using Serialization 
+3. Using Cloning 
+
+To Avoid these we need to do the following.
+
+1.For Reflection 
+we need implement ENUM , ENUM will be initailized only once.
+
+2.For Serilization 
+we need to override readValues method to overcome this
+
+3.For Cloning 
+we need to override clone method and should thorw clone not supported exception
+
